@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Hereminders
+
+  Created by Rodrigo Borges on 9/6/18.
+  Copyright © 2018 Rodrigo Borges. All rights reserved.
+*/
+
+"ADD_ITEM_SHORTCUT_TITLE" = "Adicionar novo local";

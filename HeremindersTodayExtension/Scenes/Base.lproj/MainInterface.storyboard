@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="HeremindersTodayExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gq7-Y2-rAs">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6rZ-1y-pY0">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sr2-xM-F7R">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEV-uf-yOk">
+                                        <rect key="frame" x="102.5" y="33.5" width="115" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <state key="normal" title="Add new place"/>
+                                        <connections>
+                                            <action selector="addNewPlaceButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="4EA-E7-f1y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="gEV-uf-yOk" firstAttribute="centerY" secondItem="Sr2-xM-F7R" secondAttribute="centerY" id="LKE-E5-xfg"/>
+                                    <constraint firstItem="gEV-uf-yOk" firstAttribute="centerX" secondItem="Sr2-xM-F7R" secondAttribute="centerX" id="ke4-zg-92d"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Sr2-xM-F7R" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="5kJ-iW-2KW"/>
+                            <constraint firstItem="gq7-Y2-rAs" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="7nU-xU-6wk"/>
+                            <constraint firstItem="Sr2-xM-F7R" firstAttribute="trailing" secondItem="ssy-KU-ocm" secondAttribute="trailing" id="EMi-73-Ss6"/>
+                            <constraint firstItem="Sr2-xM-F7R" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="O5r-hb-3aV"/>
+                            <constraint firstItem="gq7-Y2-rAs" firstAttribute="trailing" secondItem="ssy-KU-ocm" secondAttribute="trailing" id="SC8-Hr-Iyj"/>
+                            <constraint firstItem="gq7-Y2-rAs" firstAttribute="bottom" secondItem="ssy-KU-ocm" secondAttribute="bottom" id="YdR-64-Afj"/>
+                            <constraint firstItem="Sr2-xM-F7R" firstAttribute="bottom" secondItem="ssy-KU-ocm" secondAttribute="bottom" id="bcV-Ya-0kr"/>
+                            <constraint firstItem="gq7-Y2-rAs" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="gk9-am-zLI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="100"/>
+                    <connections>
+                        <outlet property="collectionView" destination="gq7-Y2-rAs" id="teI-Id-zhN"/>
+                        <outlet property="collectionViewFlowLayout" destination="6rZ-1y-pY0" id="rEL-Ey-pHQ"/>
+                        <outlet property="emptyView" destination="Sr2-xM-F7R" id="l4l-Bg-tYd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.80000000000001" y="124.13793103448276"/>
+        </scene>
+    </scenes>
+</document>

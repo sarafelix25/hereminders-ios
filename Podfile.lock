@@ -1,0 +1,22 @@
+PODS:
+  - Crashlytics (3.10.2):
+    - Fabric (~> 1.7.7)
+  - Fabric (1.7.7)
+  - RxSwift (4.1.2)
+  - SwiftGen (5.3.0)
+
+DEPENDENCIES:
+  - Crashlytics
+  - Fabric
+  - RxSwift
+  - SwiftGen
+
+SPEC CHECKSUMS:
+  Crashlytics: 0360624eea1c978a743feddb2fb1ef8b37fb7a0d
+  Fabric: bda89e242bce1b7b8ab264248cf3407774ce0095
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  SwiftGen: 4379bd3640b0a212a0f6ea3c494adba385513d10
+
+PODFILE CHECKSUM: b8637c3623171793e7acd439a498556e93c212a6
+
+COCOAPODS: 1.4.0

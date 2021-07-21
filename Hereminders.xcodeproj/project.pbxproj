@@ -1,0 +1,1412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		494B8DFE8651D81614F0892D /* Pods_HeremindersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D88789351E1BF3D95B871DD /* Pods_HeremindersTests.framework */; };
+		89B2AFC2AD9B6003B627FFD3 /* Pods_Hereminders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150D92276C2DFA070189FDC0 /* Pods_Hereminders.framework */; };
+		9804F6AD2066D79300820153 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9804F6AC2066D79300820153 /* AppDelegate.swift */; };
+		9804F6B52066D79300820153 /* Hereminders.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9804F6B32066D79300820153 /* Hereminders.xcdatamodeld */; };
+		9804F6B72066D79300820153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9804F6B62066D79300820153 /* Assets.xcassets */; };
+		9804F6BA2066D79300820153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9804F6B82066D79300820153 /* LaunchScreen.storyboard */; };
+		9804F6C52066D79300820153 /* HeremindersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9804F6C42066D79300820153 /* HeremindersTests.swift */; };
+		9804F6E32066D90A00820153 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9804F6E22066D90A00820153 /* DataController.swift */; };
+		9804F6E72066DAC900820153 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9804F6E52066DAC900820153 /* HomeViewController.swift */; };
+		9804F6E82066DAC900820153 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9804F6E62066DAC900820153 /* HomeViewController.xib */; };
+		9804F6EA2066DBB400820153 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9804F6E92066DBB400820153 /* UIViewController+Extensions.swift */; };
+		9807EB3220C9ECD100B5F7DA /* HomeViewController+MKMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9807EB3120C9ECD100B5F7DA /* HomeViewController+MKMapViewDelegate.swift */; };
+		9807EB3420C9EEE800B5F7DA /* ReminderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9807EB3320C9EEE800B5F7DA /* ReminderViewModel.swift */; };
+		9807EB3620C9F23000B5F7DA /* ReminderViewController+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9807EB3520C9F23000B5F7DA /* ReminderViewController+TableViewDataSource.swift */; };
+		980B048820CB58C600121291 /* MapHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980B048720CB58C600121291 /* MapHeaderView.swift */; };
+		980B048A20CB58EA00121291 /* MapHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980B048920CB58EA00121291 /* MapHeaderView.xib */; };
+		983341C820DC53AD006011CF /* PlaceSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983341C620DC53AD006011CF /* PlaceSearchViewController.swift */; };
+		983341C920DC53AD006011CF /* PlaceSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 983341C720DC53AD006011CF /* PlaceSearchViewController.xib */; };
+		983341CB20DC561B006011CF /* PlaceSearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983341CA20DC561B006011CF /* PlaceSearchCoordinator.swift */; };
+		9834C02F2694CB3C0017B6ED /* Matchfile in Resources */ = {isa = PBXBuildFile; fileRef = 98DA12B32119147E0090CA2B /* Matchfile */; };
+		9844E40521080B0B0071B116 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9844E40421080B0B0071B116 /* String+Extensions.swift */; };
+		986B9C7F2140CF5000A1D103 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986B9C7E2140CF5000A1D103 /* Bundle+Extensions.swift */; };
+		986B9C822140D58500A1D103 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 986B9C842140D58500A1D103 /* InfoPlist.strings */; };
+		986B9C8A2140D69000A1D103 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 986B9C8C2140D69000A1D103 /* InfoPlist.strings */; };
+		9871B41221447B0A0050C651 /* PlaceDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9871B41121447B0A0050C651 /* PlaceDataController.swift */; };
+		9871B41421447DEF0050C651 /* ReminderDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9871B41321447DEF0050C651 /* ReminderDataController.swift */; };
+		9871B415214482370050C651 /* PlaceDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9871B41121447B0A0050C651 /* PlaceDataController.swift */; };
+		9871B417214483460050C651 /* AppDelegate+ThemeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9871B416214483460050C651 /* AppDelegate+ThemeConfiguration.swift */; };
+		9871B4192144836A0050C651 /* AppDelegate+NotificationsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9871B4182144836A0050C651 /* AppDelegate+NotificationsConfiguration.swift */; };
+		9871B41B214484770050C651 /* AppDelegate+ServicesConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9871B41A214484770050C651 /* AppDelegate+ServicesConfiguration.swift */; };
+		9877BBEA20F1A824001D2688 /* PlaceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9877BBE820F1A824001D2688 /* PlaceListViewController.swift */; };
+		9877BBEB20F1A824001D2688 /* PlaceListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9877BBE920F1A824001D2688 /* PlaceListViewController.xib */; };
+		9877BBED20F1AA21001D2688 /* PlaceListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9877BBEC20F1AA21001D2688 /* PlaceListCoordinator.swift */; };
+		9877BBF120F1ADA1001D2688 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9877BBEF20F1ADA1001D2688 /* SettingsViewController.swift */; };
+		9877BBF220F1ADA1001D2688 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9877BBF020F1ADA1001D2688 /* SettingsViewController.xib */; };
+		9877BBF420F1B009001D2688 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9877BBF320F1B009001D2688 /* SettingsCoordinator.swift */; };
+		987AD731213E1FCB002F3D26 /* NotificationName+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987AD730213E1FCB002F3D26 /* NotificationName+Extensions.swift */; };
+		987AD733213F4537002F3D26 /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987AD732213F4537002F3D26 /* UIBarButtonItem+Extensions.swift */; };
+		987AD76521409EA0002F3D26 /* Hereminders.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9804F6B32066D79300820153 /* Hereminders.xcdatamodeld */; };
+		988082CA20C1F31900B4E660 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988082C920C1F31900B4E660 /* HomeViewModel.swift */; };
+		9890C16F206C494D003C6F8D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890C16E206C494D003C6F8D /* AppCoordinator.swift */; };
+		9890C171206C4B16003C6F8D /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890C170206C4B16003C6F8D /* HomeCoordinator.swift */; };
+		9890C173206C4E55003C6F8D /* ReminderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890C172206C4E55003C6F8D /* ReminderCoordinator.swift */; };
+		98942C3C21337A4800DA432B /* PlaceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98942C3A21337A4800DA432B /* PlaceCollectionViewCell.swift */; };
+		98942C3D21337A4800DA432B /* PlaceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98942C3B21337A4800DA432B /* PlaceCollectionViewCell.xib */; };
+		98942C3F2134E1AB00DA432B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98942C3E2134E1AB00DA432B /* Assets.xcassets */; };
+		9897153420F2D16400F976FE /* PlaceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9897153320F2D16400F976FE /* PlaceListViewModel.swift */; };
+		9897153820F397F300F976FE /* PlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9897153620F397F300F976FE /* PlaceDetailsViewController.swift */; };
+		9897153920F397F300F976FE /* PlaceDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9897153720F397F300F976FE /* PlaceDetailsViewController.xib */; };
+		9897153B20F39A1E00F976FE /* PlaceDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9897153A20F39A1E00F976FE /* PlaceDetailsCoordinator.swift */; };
+		9897154320F3B5FA00F976FE /* ImagesConstants.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9897154120F3B5F900F976FE /* ImagesConstants.generated.swift */; };
+		9897154420F3B5FA00F976FE /* Localized.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9897154220F3B5FA00F976FE /* Localized.generated.swift */; };
+		9897154520F3C6DE00F976FE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9897154720F3C6DE00F976FE /* Localizable.strings */; };
+		989902BF20FD73E000865079 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989902BE20FD73E000865079 /* StoreKit.framework */; };
+		989902C220FD7D4500865079 /* IAPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989902C120FD7D4500865079 /* IAPController.swift */; };
+		989902C620FD856800865079 /* PremiumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989902C420FD856800865079 /* PremiumViewController.swift */; };
+		989902C720FD856800865079 /* PremiumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989902C520FD856800865079 /* PremiumViewController.xib */; };
+		989902C920FD85B600865079 /* PremiumCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989902C820FD85B600865079 /* PremiumCoordinator.swift */; };
+		989BAB0720F41BC300C82DF7 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989BAB0620F41BC300C82DF7 /* UIColor+Extensions.swift */; };
+		989BAB0920F41D7800C82DF7 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989BAB0820F41D7800C82DF7 /* Button.swift */; };
+		98C2EFC721191F070059D14C /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9804F6E22066D90A00820153 /* DataController.swift */; };
+		98D02AC820673F0700E8BC91 /* SegmentedControlTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D02AC620673F0700E8BC91 /* SegmentedControlTableViewCell.swift */; };
+		98D02AC920673F0700E8BC91 /* SegmentedControlTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98D02AC720673F0700E8BC91 /* SegmentedControlTableViewCell.xib */; };
+		98DA12B52119147E0090CA2B /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = 98DA12B02119147E0090CA2B /* Appfile */; };
+		98DA12B62119147E0090CA2B /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 98DA12B12119147E0090CA2B /* Fastfile */; };
+		98DA12B72119147E0090CA2B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 98DA12B22119147E0090CA2B /* README.md */; };
+		98DA12D42119173C0090CA2B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98DA12BF211917090090CA2B /* NotificationCenter.framework */; };
+		98DA12D72119173C0090CA2B /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DA12D62119173C0090CA2B /* TodayViewController.swift */; };
+		98DA12DA2119173C0090CA2B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98DA12D82119173C0090CA2B /* MainInterface.storyboard */; };
+		98DA12DE2119173C0090CA2B /* HeremindersTodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 98DA12D32119173C0090CA2B /* HeremindersTodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		98DA12E421191CCD0090CA2B /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DD307F2068203300AA7E75 /* Place.swift */; };
+		98DA12E521191CD00090CA2B /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DD307D2068203300AA7E75 /* Reminder.swift */; };
+		98DCD2B220DEB8E700A49897 /* MKCoordinateSpan+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DCD2B120DEB8E700A49897 /* MKCoordinateSpan+Extensions.swift */; };
+		98DCD2B420DEBCB800A49897 /* MKMapView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DCD2B320DEBCB800A49897 /* MKMapView+Extensions.swift */; };
+		98DCD2B720E1C4B700A49897 /* ReminderListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98DCD2B620E1C4B700A49897 /* ReminderListView.xib */; };
+		98DCD2B920E1C4C900A49897 /* ReminderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DCD2B820E1C4C900A49897 /* ReminderListView.swift */; };
+		98DCD2BB20E5B52200A49897 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DCD2BA20E5B52200A49897 /* Annotation.swift */; };
+		98DCD2BE20E8242B00A49897 /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DCD2BD20E8242B00A49897 /* CoordinatorType.swift */; };
+		98DCD2C020E82BD500A49897 /* MKPlacemark+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DCD2BF20E82BD500A49897 /* MKPlacemark+Extensions.swift */; };
+		98DD30812068203300AA7E75 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DD307D2068203300AA7E75 /* Reminder.swift */; };
+		98DD30832068203300AA7E75 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DD307F2068203300AA7E75 /* Place.swift */; };
+		98DD30902068373E00AA7E75 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DD308F2068373E00AA7E75 /* PlaceAnnotation.swift */; };
+		98DD30952068587D00AA7E75 /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DD30942068587D00AA7E75 /* LocationController.swift */; };
+		98F1C97D2066DFBD0008FF57 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1C97B2066DFBD0008FF57 /* ReminderViewController.swift */; };
+		98F1C97E2066DFBD0008FF57 /* ReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F1C97C2066DFBD0008FF57 /* ReminderViewController.xib */; };
+		98F1C9842066E33F0008FF57 /* TextInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1C9822066E33F0008FF57 /* TextInputTableViewCell.swift */; };
+		98F1C9852066E33F0008FF57 /* TextInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F1C9832066E33F0008FF57 /* TextInputTableViewCell.xib */; };
+		98F1C9872066E4420008FF57 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1C9862066E4420008FF57 /* UITableView+Extensions.swift */; };
+		98F1C9892066E4570008FF57 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1C9882066E4570008FF57 /* UITableViewCell+Extensions.swift */; };
+		98F1C98D2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1C98C2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift */; };
+		98F1C9912066E6EF0008FF57 /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1C98F2066E6EF0008FF57 /* SliderTableViewCell.swift */; };
+		98F1C9922066E6EF0008FF57 /* SliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F1C9902066E6EF0008FF57 /* SliderTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9804F6C12066D79300820153 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9804F6A12066D79300820153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9804F6A82066D79300820153;
+			remoteInfo = Hereminders;
+		};
+		98DA12DC2119173C0090CA2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9804F6A12066D79300820153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98DA12D22119173C0090CA2B;
+			remoteInfo = HeremindersTodayExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		987AD75B213F633D002F3D26 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98DA12CE211917090090CA2B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				98DA12DE2119173C0090CA2B /* HeremindersTodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		150D92276C2DFA070189FDC0 /* Pods_Hereminders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hereminders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D88789351E1BF3D95B871DD /* Pods_HeremindersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeremindersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C4F058DE6C0C2862A2BE666 /* Pods-HeremindersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeremindersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeremindersUITests/Pods-HeremindersUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9724BA3B22BE12DF38B2AB8B /* Pods-HeremindersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeremindersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeremindersTests/Pods-HeremindersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9804F6A92066D79300820153 /* Hereminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hereminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9804F6AC2066D79300820153 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9804F6B42066D79300820153 /* Hereminders.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hereminders.xcdatamodel; sourceTree = "<group>"; };
+		9804F6B62066D79300820153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9804F6B92066D79300820153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9804F6BB2066D79300820153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9804F6C02066D79300820153 /* HeremindersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeremindersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9804F6C42066D79300820153 /* HeremindersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeremindersTests.swift; sourceTree = "<group>"; };
+		9804F6C62066D79300820153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9804F6E22066D90A00820153 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		9804F6E52066DAC900820153 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9804F6E62066DAC900820153 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		9804F6E92066DBB400820153 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		9807EB3120C9ECD100B5F7DA /* HomeViewController+MKMapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+MKMapViewDelegate.swift"; sourceTree = "<group>"; };
+		9807EB3320C9EEE800B5F7DA /* ReminderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewModel.swift; sourceTree = "<group>"; };
+		9807EB3520C9F23000B5F7DA /* ReminderViewController+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		980B048720CB58C600121291 /* MapHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHeaderView.swift; sourceTree = "<group>"; };
+		980B048920CB58EA00121291 /* MapHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapHeaderView.xib; sourceTree = "<group>"; };
+		983341C620DC53AD006011CF /* PlaceSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchViewController.swift; sourceTree = "<group>"; };
+		983341C720DC53AD006011CF /* PlaceSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceSearchViewController.xib; sourceTree = "<group>"; };
+		983341CA20DC561B006011CF /* PlaceSearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchCoordinator.swift; sourceTree = "<group>"; };
+		9844E40421080B0B0071B116 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		986B9C7E2140CF5000A1D103 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		986B9C832140D58500A1D103 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		986B9C852140D58E00A1D103 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		986B9C8B2140D69000A1D103 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		986B9C8D2140D69300A1D103 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9871B41121447B0A0050C651 /* PlaceDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDataController.swift; sourceTree = "<group>"; };
+		9871B41321447DEF0050C651 /* ReminderDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDataController.swift; sourceTree = "<group>"; };
+		9871B416214483460050C651 /* AppDelegate+ThemeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+ThemeConfiguration.swift"; sourceTree = "<group>"; };
+		9871B4182144836A0050C651 /* AppDelegate+NotificationsConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+NotificationsConfiguration.swift"; sourceTree = "<group>"; };
+		9871B41A214484770050C651 /* AppDelegate+ServicesConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+ServicesConfiguration.swift"; sourceTree = "<group>"; };
+		9877BBE820F1A824001D2688 /* PlaceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListViewController.swift; sourceTree = "<group>"; };
+		9877BBE920F1A824001D2688 /* PlaceListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceListViewController.xib; sourceTree = "<group>"; };
+		9877BBEC20F1AA21001D2688 /* PlaceListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListCoordinator.swift; sourceTree = "<group>"; };
+		9877BBEF20F1ADA1001D2688 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9877BBF020F1ADA1001D2688 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		9877BBF320F1B009001D2688 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		987AD730213E1FCB002F3D26 /* NotificationName+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extensions.swift"; sourceTree = "<group>"; };
+		987AD732213F4537002F3D26 /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
+		988082C920C1F31900B4E660 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		9890C16E206C494D003C6F8D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		9890C170206C4B16003C6F8D /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		9890C172206C4E55003C6F8D /* ReminderCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCoordinator.swift; sourceTree = "<group>"; };
+		98942C3A21337A4800DA432B /* PlaceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCollectionViewCell.swift; sourceTree = "<group>"; };
+		98942C3B21337A4800DA432B /* PlaceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceCollectionViewCell.xib; sourceTree = "<group>"; };
+		98942C3E2134E1AB00DA432B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9897153320F2D16400F976FE /* PlaceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListViewModel.swift; sourceTree = "<group>"; };
+		9897153620F397F300F976FE /* PlaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewController.swift; sourceTree = "<group>"; };
+		9897153720F397F300F976FE /* PlaceDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceDetailsViewController.xib; sourceTree = "<group>"; };
+		9897153A20F39A1E00F976FE /* PlaceDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsCoordinator.swift; sourceTree = "<group>"; };
+		9897154120F3B5F900F976FE /* ImagesConstants.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesConstants.generated.swift; sourceTree = "<group>"; };
+		9897154220F3B5FA00F976FE /* Localized.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localized.generated.swift; sourceTree = "<group>"; };
+		9897154620F3C6DE00F976FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9897154820F3C70900F976FE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		9897154920F3C7D000F976FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		989902BE20FD73E000865079 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		989902C120FD7D4500865079 /* IAPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPController.swift; sourceTree = "<group>"; };
+		989902C420FD856800865079 /* PremiumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumViewController.swift; sourceTree = "<group>"; };
+		989902C520FD856800865079 /* PremiumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PremiumViewController.xib; sourceTree = "<group>"; };
+		989902C820FD85B600865079 /* PremiumCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumCoordinator.swift; sourceTree = "<group>"; };
+		989BAB0620F41BC300C82DF7 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		989BAB0820F41D7800C82DF7 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		98C2EFC621191ECB0059D14C /* HeremindersTodayExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeremindersTodayExtension.entitlements; sourceTree = "<group>"; };
+		98D02AC620673F0700E8BC91 /* SegmentedControlTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlTableViewCell.swift; sourceTree = "<group>"; };
+		98D02AC720673F0700E8BC91 /* SegmentedControlTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentedControlTableViewCell.xib; sourceTree = "<group>"; };
+		98DA12AE211914410090CA2B /* Hereminders.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hereminders.entitlements; sourceTree = "<group>"; };
+		98DA12B02119147E0090CA2B /* Appfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
+		98DA12B12119147E0090CA2B /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		98DA12B22119147E0090CA2B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		98DA12B32119147E0090CA2B /* Matchfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Matchfile; sourceTree = "<group>"; };
+		98DA12B42119147E0090CA2B /* report.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = report.xml; sourceTree = "<group>"; };
+		98DA12BF211917090090CA2B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		98DA12D32119173C0090CA2B /* HeremindersTodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HeremindersTodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		98DA12D62119173C0090CA2B /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		98DA12D92119173C0090CA2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		98DA12DB2119173C0090CA2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98DCD2B120DEB8E700A49897 /* MKCoordinateSpan+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKCoordinateSpan+Extensions.swift"; sourceTree = "<group>"; };
+		98DCD2B320DEBCB800A49897 /* MKMapView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Extensions.swift"; sourceTree = "<group>"; };
+		98DCD2B620E1C4B700A49897 /* ReminderListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderListView.xib; sourceTree = "<group>"; };
+		98DCD2B820E1C4C900A49897 /* ReminderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListView.swift; sourceTree = "<group>"; };
+		98DCD2BA20E5B52200A49897 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		98DCD2BD20E8242B00A49897 /* CoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
+		98DCD2BF20E82BD500A49897 /* MKPlacemark+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPlacemark+Extensions.swift"; sourceTree = "<group>"; };
+		98DD307D2068203300AA7E75 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		98DD307F2068203300AA7E75 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		98DD308F2068373E00AA7E75 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		98DD30942068587D00AA7E75 /* LocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
+		98F1C97B2066DFBD0008FF57 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		98F1C97C2066DFBD0008FF57 /* ReminderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderViewController.xib; sourceTree = "<group>"; };
+		98F1C9822066E33F0008FF57 /* TextInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputTableViewCell.swift; sourceTree = "<group>"; };
+		98F1C9832066E33F0008FF57 /* TextInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInputTableViewCell.xib; sourceTree = "<group>"; };
+		98F1C9862066E4420008FF57 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		98F1C9882066E4570008FF57 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		98F1C98C2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		98F1C98F2066E6EF0008FF57 /* SliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTableViewCell.swift; sourceTree = "<group>"; };
+		98F1C9902066E6EF0008FF57 /* SliderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderTableViewCell.xib; sourceTree = "<group>"; };
+		CCD8DDA0503BF862CCFD8674 /* Pods-Hereminders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hereminders.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hereminders/Pods-Hereminders.debug.xcconfig"; sourceTree = "<group>"; };
+		D39A76E2613F27BF979AD07F /* Pods-Hereminders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hereminders.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hereminders/Pods-Hereminders.release.xcconfig"; sourceTree = "<group>"; };
+		D5E098537E96CE7E62A81278 /* Pods-HeremindersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeremindersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeremindersTests/Pods-HeremindersTests.release.xcconfig"; sourceTree = "<group>"; };
+		F1E294923822D767E0E2F371 /* Pods_HeremindersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeremindersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEEA0847B9554E1F3C321E20 /* Pods-HeremindersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeremindersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeremindersUITests/Pods-HeremindersUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9804F6A62066D79300820153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89B2AFC2AD9B6003B627FFD3 /* Pods_Hereminders.framework in Frameworks */,
+				989902BF20FD73E000865079 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9804F6BD2066D79300820153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494B8DFE8651D81614F0892D /* Pods_HeremindersTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98DA12D02119173C0090CA2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98DA12D42119173C0090CA2B /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55035810078F38E85E247FE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				989902BE20FD73E000865079 /* StoreKit.framework */,
+				150D92276C2DFA070189FDC0 /* Pods_Hereminders.framework */,
+				7D88789351E1BF3D95B871DD /* Pods_HeremindersTests.framework */,
+				F1E294923822D767E0E2F371 /* Pods_HeremindersUITests.framework */,
+				98DA12BF211917090090CA2B /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		650E8FB4F097695E1C4E7C04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCD8DDA0503BF862CCFD8674 /* Pods-Hereminders.debug.xcconfig */,
+				D39A76E2613F27BF979AD07F /* Pods-Hereminders.release.xcconfig */,
+				9724BA3B22BE12DF38B2AB8B /* Pods-HeremindersTests.debug.xcconfig */,
+				D5E098537E96CE7E62A81278 /* Pods-HeremindersTests.release.xcconfig */,
+				FEEA0847B9554E1F3C321E20 /* Pods-HeremindersUITests.debug.xcconfig */,
+				8C4F058DE6C0C2862A2BE666 /* Pods-HeremindersUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9804F6A02066D79300820153 = {
+			isa = PBXGroup;
+			children = (
+				98DA12AF2119147E0090CA2B /* fastlane */,
+				9804F6AB2066D79300820153 /* Hereminders */,
+				9804F6C32066D79300820153 /* HeremindersTests */,
+				98DA12D52119173C0090CA2B /* HeremindersTodayExtension */,
+				9804F6AA2066D79300820153 /* Products */,
+				650E8FB4F097695E1C4E7C04 /* Pods */,
+				55035810078F38E85E247FE8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9804F6AA2066D79300820153 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9804F6A92066D79300820153 /* Hereminders.app */,
+				9804F6C02066D79300820153 /* HeremindersTests.xctest */,
+				98DA12D32119173C0090CA2B /* HeremindersTodayExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9804F6AB2066D79300820153 /* Hereminders */ = {
+			isa = PBXGroup;
+			children = (
+				9804F6DD2066D82F00820153 /* Resources */,
+				9804F6DE2066D83800820153 /* AppDelegate */,
+				9890C16C206C4934003C6F8D /* Coordinators */,
+				9804F6E02066D87900820153 /* Scenes */,
+				9804F6E12066D88900820153 /* DataSource */,
+				98F1C9812066E12B0008FF57 /* Common */,
+				98DCD2BC20E8240D00A49897 /* Protocols */,
+				9804F6DF2066D86D00820153 /* Extensions */,
+			);
+			path = Hereminders;
+			sourceTree = "<group>";
+		};
+		9804F6C32066D79300820153 /* HeremindersTests */ = {
+			isa = PBXGroup;
+			children = (
+				9804F6C42066D79300820153 /* HeremindersTests.swift */,
+				9804F6C62066D79300820153 /* Info.plist */,
+			);
+			path = HeremindersTests;
+			sourceTree = "<group>";
+		};
+		9804F6DD2066D82F00820153 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9897153F20F3B48E00F976FE /* SwiftGen */,
+				9804F6B62066D79300820153 /* Assets.xcassets */,
+				9804F6B82066D79300820153 /* LaunchScreen.storyboard */,
+				9804F6BB2066D79300820153 /* Info.plist */,
+				9897154720F3C6DE00F976FE /* Localizable.strings */,
+				98DA12AE211914410090CA2B /* Hereminders.entitlements */,
+				986B9C8C2140D69000A1D103 /* InfoPlist.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9804F6DE2066D83800820153 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9804F6AC2066D79300820153 /* AppDelegate.swift */,
+				9871B416214483460050C651 /* AppDelegate+ThemeConfiguration.swift */,
+				9871B4182144836A0050C651 /* AppDelegate+NotificationsConfiguration.swift */,
+				9871B41A214484770050C651 /* AppDelegate+ServicesConfiguration.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		9804F6DF2066D86D00820153 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9804F6E92066DBB400820153 /* UIViewController+Extensions.swift */,
+				98F1C9862066E4420008FF57 /* UITableView+Extensions.swift */,
+				98F1C9882066E4570008FF57 /* UITableViewCell+Extensions.swift */,
+				98DCD2B120DEB8E700A49897 /* MKCoordinateSpan+Extensions.swift */,
+				98DCD2B320DEBCB800A49897 /* MKMapView+Extensions.swift */,
+				98DCD2BF20E82BD500A49897 /* MKPlacemark+Extensions.swift */,
+				989BAB0620F41BC300C82DF7 /* UIColor+Extensions.swift */,
+				9844E40421080B0B0071B116 /* String+Extensions.swift */,
+				987AD730213E1FCB002F3D26 /* NotificationName+Extensions.swift */,
+				987AD732213F4537002F3D26 /* UIBarButtonItem+Extensions.swift */,
+				986B9C7E2140CF5000A1D103 /* Bundle+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9804F6E02066D87900820153 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9804F6E42066DAA400820153 /* Home */,
+				98F1C97A2066DFA90008FF57 /* NewReminder */,
+				983341C520DC5374006011CF /* PlaceSearch */,
+				9877BBE720F1A7E8001D2688 /* PlaceList */,
+				9897153520F397D400F976FE /* PlaceDetails */,
+				9877BBEE20F1AD88001D2688 /* Settings */,
+				989902C320FD854900865079 /* Premium */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9804F6E12066D88900820153 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				989902C020FD7D2D00865079 /* IAP */,
+				98DD30922068586400AA7E75 /* Location */,
+				98DD30912068585900AA7E75 /* CoreData */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		9804F6E42066DAA400820153 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				98DCD2B520E1C4A000A49897 /* ReminderListView */,
+				9804F6E52066DAC900820153 /* HomeViewController.swift */,
+				9804F6E62066DAC900820153 /* HomeViewController.xib */,
+				9807EB3120C9ECD100B5F7DA /* HomeViewController+MKMapViewDelegate.swift */,
+				988082C920C1F31900B4E660 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		980B048520CB571800121291 /* MapHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				980B048720CB58C600121291 /* MapHeaderView.swift */,
+				980B048920CB58EA00121291 /* MapHeaderView.xib */,
+			);
+			path = MapHeaderView;
+			sourceTree = "<group>";
+		};
+		983341C520DC5374006011CF /* PlaceSearch */ = {
+			isa = PBXGroup;
+			children = (
+				983341C620DC53AD006011CF /* PlaceSearchViewController.swift */,
+				983341C720DC53AD006011CF /* PlaceSearchViewController.xib */,
+			);
+			path = PlaceSearch;
+			sourceTree = "<group>";
+		};
+		9877BBE720F1A7E8001D2688 /* PlaceList */ = {
+			isa = PBXGroup;
+			children = (
+				9877BBE820F1A824001D2688 /* PlaceListViewController.swift */,
+				9877BBE920F1A824001D2688 /* PlaceListViewController.xib */,
+				9897153320F2D16400F976FE /* PlaceListViewModel.swift */,
+			);
+			path = PlaceList;
+			sourceTree = "<group>";
+		};
+		9877BBEE20F1AD88001D2688 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9877BBEF20F1ADA1001D2688 /* SettingsViewController.swift */,
+				9877BBF020F1ADA1001D2688 /* SettingsViewController.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		9890C16C206C4934003C6F8D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				9890C16E206C494D003C6F8D /* AppCoordinator.swift */,
+				9890C170206C4B16003C6F8D /* HomeCoordinator.swift */,
+				9890C172206C4E55003C6F8D /* ReminderCoordinator.swift */,
+				983341CA20DC561B006011CF /* PlaceSearchCoordinator.swift */,
+				9877BBEC20F1AA21001D2688 /* PlaceListCoordinator.swift */,
+				9877BBF320F1B009001D2688 /* SettingsCoordinator.swift */,
+				9897153A20F39A1E00F976FE /* PlaceDetailsCoordinator.swift */,
+				989902C820FD85B600865079 /* PremiumCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		98942C3921337A1000DA432B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				98942C3A21337A4800DA432B /* PlaceCollectionViewCell.swift */,
+				98942C3B21337A4800DA432B /* PlaceCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9897153520F397D400F976FE /* PlaceDetails */ = {
+			isa = PBXGroup;
+			children = (
+				9897153620F397F300F976FE /* PlaceDetailsViewController.swift */,
+				9897153720F397F300F976FE /* PlaceDetailsViewController.xib */,
+			);
+			path = PlaceDetails;
+			sourceTree = "<group>";
+		};
+		9897153F20F3B48E00F976FE /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				9897154120F3B5F900F976FE /* ImagesConstants.generated.swift */,
+				9897154220F3B5FA00F976FE /* Localized.generated.swift */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		989902C020FD7D2D00865079 /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				989902C120FD7D4500865079 /* IAPController.swift */,
+			);
+			path = IAP;
+			sourceTree = "<group>";
+		};
+		989902C320FD854900865079 /* Premium */ = {
+			isa = PBXGroup;
+			children = (
+				989902C420FD856800865079 /* PremiumViewController.swift */,
+				989902C520FD856800865079 /* PremiumViewController.xib */,
+			);
+			path = Premium;
+			sourceTree = "<group>";
+		};
+		98D02AC520673EEB00E8BC91 /* SegmentedControlCell */ = {
+			isa = PBXGroup;
+			children = (
+				98D02AC620673F0700E8BC91 /* SegmentedControlTableViewCell.swift */,
+				98D02AC720673F0700E8BC91 /* SegmentedControlTableViewCell.xib */,
+			);
+			path = SegmentedControlCell;
+			sourceTree = "<group>";
+		};
+		98DA12AF2119147E0090CA2B /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				98DA12B02119147E0090CA2B /* Appfile */,
+				98DA12B12119147E0090CA2B /* Fastfile */,
+				98DA12B22119147E0090CA2B /* README.md */,
+				98DA12B32119147E0090CA2B /* Matchfile */,
+				98DA12B42119147E0090CA2B /* report.xml */,
+			);
+			path = fastlane;
+			sourceTree = "<group>";
+		};
+		98DA12D52119173C0090CA2B /* HeremindersTodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				98E67A71212F8B4300BCBD03 /* Resources */,
+				98E67A72212F8B5500BCBD03 /* Scenes */,
+			);
+			path = HeremindersTodayExtension;
+			sourceTree = "<group>";
+		};
+		98DCD2B520E1C4A000A49897 /* ReminderListView */ = {
+			isa = PBXGroup;
+			children = (
+				98DCD2B620E1C4B700A49897 /* ReminderListView.xib */,
+				98DCD2B820E1C4C900A49897 /* ReminderListView.swift */,
+			);
+			path = ReminderListView;
+			sourceTree = "<group>";
+		};
+		98DCD2BC20E8240D00A49897 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				98DCD2BD20E8242B00A49897 /* CoordinatorType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		98DD30912068585900AA7E75 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9804F6B32066D79300820153 /* Hereminders.xcdatamodeld */,
+				9804F6E22066D90A00820153 /* DataController.swift */,
+				9871B41121447B0A0050C651 /* PlaceDataController.swift */,
+				9871B41321447DEF0050C651 /* ReminderDataController.swift */,
+				98DD307D2068203300AA7E75 /* Reminder.swift */,
+				98DD307F2068203300AA7E75 /* Place.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		98DD30922068586400AA7E75 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				98DD30942068587D00AA7E75 /* LocationController.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		98E67A71212F8B4300BCBD03 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				98C2EFC621191ECB0059D14C /* HeremindersTodayExtension.entitlements */,
+				98DA12DB2119173C0090CA2B /* Info.plist */,
+				98942C3E2134E1AB00DA432B /* Assets.xcassets */,
+				986B9C842140D58500A1D103 /* InfoPlist.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		98E67A72212F8B5500BCBD03 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				98942C3921337A1000DA432B /* Cells */,
+				98DA12D62119173C0090CA2B /* TodayViewController.swift */,
+				98DA12D82119173C0090CA2B /* MainInterface.storyboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		98F1C97A2066DFA90008FF57 /* NewReminder */ = {
+			isa = PBXGroup;
+			children = (
+				980B048520CB571800121291 /* MapHeaderView */,
+				98F1C97B2066DFBD0008FF57 /* ReminderViewController.swift */,
+				98F1C97C2066DFBD0008FF57 /* ReminderViewController.xib */,
+				9807EB3520C9F23000B5F7DA /* ReminderViewController+TableViewDataSource.swift */,
+				98F1C98C2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift */,
+				9807EB3320C9EEE800B5F7DA /* ReminderViewModel.swift */,
+				98F1C97F2066DFE40008FF57 /* Cells */,
+			);
+			path = NewReminder;
+			sourceTree = "<group>";
+		};
+		98F1C97F2066DFE40008FF57 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				98D02AC520673EEB00E8BC91 /* SegmentedControlCell */,
+				98F1C98E2066E6C90008FF57 /* SliderCell */,
+				98F1C9802066DFE90008FF57 /* TextInputCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		98F1C9802066DFE90008FF57 /* TextInputCell */ = {
+			isa = PBXGroup;
+			children = (
+				98F1C9822066E33F0008FF57 /* TextInputTableViewCell.swift */,
+				98F1C9832066E33F0008FF57 /* TextInputTableViewCell.xib */,
+			);
+			path = TextInputCell;
+			sourceTree = "<group>";
+		};
+		98F1C9812066E12B0008FF57 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				98DD308F2068373E00AA7E75 /* PlaceAnnotation.swift */,
+				98DCD2BA20E5B52200A49897 /* Annotation.swift */,
+				989BAB0820F41D7800C82DF7 /* Button.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		98F1C98E2066E6C90008FF57 /* SliderCell */ = {
+			isa = PBXGroup;
+			children = (
+				98F1C98F2066E6EF0008FF57 /* SliderTableViewCell.swift */,
+				98F1C9902066E6EF0008FF57 /* SliderTableViewCell.xib */,
+			);
+			path = SliderCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9804F6A82066D79300820153 /* Hereminders */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9804F6D42066D79300820153 /* Build configuration list for PBXNativeTarget "Hereminders" */;
+			buildPhases = (
+				884F9C339C730D672A45877F /* [CP] Check Pods Manifest.lock */,
+				9897154020F3B57800F976FE /* SwiftGen Script */,
+				9804F6A52066D79300820153 /* Sources */,
+				9804F6A62066D79300820153 /* Frameworks */,
+				9804F6A72066D79300820153 /* Resources */,
+				23A07408A286AC773B8E5100 /* [CP] Embed Pods Frameworks */,
+				D432244B6FD9F78B89F05FBD /* [CP] Copy Pods Resources */,
+				9897153C20F3B26400F976FE /* Fabric Script */,
+				98DA12CE211917090090CA2B /* Embed App Extensions */,
+				987AD75B213F633D002F3D26 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98DA12DD2119173C0090CA2B /* PBXTargetDependency */,
+			);
+			name = Hereminders;
+			productName = Hereminders;
+			productReference = 9804F6A92066D79300820153 /* Hereminders.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9804F6BF2066D79300820153 /* HeremindersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9804F6D72066D79300820153 /* Build configuration list for PBXNativeTarget "HeremindersTests" */;
+			buildPhases = (
+				273EC2EB658F38FB89C5E346 /* [CP] Check Pods Manifest.lock */,
+				9804F6BC2066D79300820153 /* Sources */,
+				9804F6BD2066D79300820153 /* Frameworks */,
+				9804F6BE2066D79300820153 /* Resources */,
+				1DCBB3B0CCDD6E2D28910E1C /* [CP] Embed Pods Frameworks */,
+				6F842C8438B529B7D478B3DF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9804F6C22066D79300820153 /* PBXTargetDependency */,
+			);
+			name = HeremindersTests;
+			productName = HeremindersTests;
+			productReference = 9804F6C02066D79300820153 /* HeremindersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98DA12D22119173C0090CA2B /* HeremindersTodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98DA12DF2119173C0090CA2B /* Build configuration list for PBXNativeTarget "HeremindersTodayExtension" */;
+			buildPhases = (
+				98DA12CF2119173C0090CA2B /* Sources */,
+				98DA12D02119173C0090CA2B /* Frameworks */,
+				98DA12D12119173C0090CA2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeremindersTodayExtension;
+			productName = HeremindersTodayExtension;
+			productReference = 98DA12D32119173C0090CA2B /* HeremindersTodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9804F6A12066D79300820153 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Rodrigo Borges";
+				TargetAttributes = {
+					9804F6A82066D79300820153 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+					9804F6BF2066D79300820153 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9804F6A82066D79300820153;
+					};
+					98DA12D22119173C0090CA2B = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 9804F6A42066D79300820153 /* Build configuration list for PBXProject "Hereminders" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"pt-BR",
+			);
+			mainGroup = 9804F6A02066D79300820153;
+			productRefGroup = 9804F6AA2066D79300820153 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9804F6A82066D79300820153 /* Hereminders */,
+				9804F6BF2066D79300820153 /* HeremindersTests */,
+				98DA12D22119173C0090CA2B /* HeremindersTodayExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9804F6A72066D79300820153 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9834C02F2694CB3C0017B6ED /* Matchfile in Resources */,
+				980B048A20CB58EA00121291 /* MapHeaderView.xib in Resources */,
+				986B9C8A2140D69000A1D103 /* InfoPlist.strings in Resources */,
+				9804F6BA2066D79300820153 /* LaunchScreen.storyboard in Resources */,
+				989902C720FD856800865079 /* PremiumViewController.xib in Resources */,
+				98F1C97E2066DFBD0008FF57 /* ReminderViewController.xib in Resources */,
+				9897154520F3C6DE00F976FE /* Localizable.strings in Resources */,
+				9804F6B72066D79300820153 /* Assets.xcassets in Resources */,
+				98DA12B72119147E0090CA2B /* README.md in Resources */,
+				9804F6E82066DAC900820153 /* HomeViewController.xib in Resources */,
+				9897153920F397F300F976FE /* PlaceDetailsViewController.xib in Resources */,
+				98DA12B52119147E0090CA2B /* Appfile in Resources */,
+				98DCD2B720E1C4B700A49897 /* ReminderListView.xib in Resources */,
+				9877BBEB20F1A824001D2688 /* PlaceListViewController.xib in Resources */,
+				9877BBF220F1ADA1001D2688 /* SettingsViewController.xib in Resources */,
+				98D02AC920673F0700E8BC91 /* SegmentedControlTableViewCell.xib in Resources */,
+				983341C920DC53AD006011CF /* PlaceSearchViewController.xib in Resources */,
+				98F1C9852066E33F0008FF57 /* TextInputTableViewCell.xib in Resources */,
+				98F1C9922066E6EF0008FF57 /* SliderTableViewCell.xib in Resources */,
+				98DA12B62119147E0090CA2B /* Fastfile in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9804F6BE2066D79300820153 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98DA12D12119173C0090CA2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98942C3D21337A4800DA432B /* PlaceCollectionViewCell.xib in Resources */,
+				986B9C822140D58500A1D103 /* InfoPlist.strings in Resources */,
+				98942C3F2134E1AB00DA432B /* Assets.xcassets in Resources */,
+				98DA12DA2119173C0090CA2B /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DCBB3B0CCDD6E2D28910E1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeremindersTests/Pods-HeremindersTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23A07408A286AC773B8E5100 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hereminders/Pods-Hereminders-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hereminders/Pods-Hereminders-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		273EC2EB658F38FB89C5E346 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeremindersTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F842C8438B529B7D478B3DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeremindersTests/Pods-HeremindersTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		884F9C339C730D672A45877F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hereminders-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9897153C20F3B26400F976FE /* Fabric Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Fabric Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#\"${PODS_ROOT}/Fabric/run\" 5f18fc0194873d91b4c36f4be112631c9a5ee357 e8acf4d582c168dd0793143137e7f5ee563cf54f17672ee5e75bde846a827fb3\n";
+		};
+		9897154020F3B57800F976FE /* SwiftGen Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftGen Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen\n";
+		};
+		D432244B6FD9F78B89F05FBD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hereminders/Pods-Hereminders-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9804F6A52066D79300820153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9877BBEA20F1A824001D2688 /* PlaceListViewController.swift in Sources */,
+				98F1C98D2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift in Sources */,
+				98F1C9912066E6EF0008FF57 /* SliderTableViewCell.swift in Sources */,
+				98F1C9872066E4420008FF57 /* UITableView+Extensions.swift in Sources */,
+				980B048820CB58C600121291 /* MapHeaderView.swift in Sources */,
+				98DCD2B220DEB8E700A49897 /* MKCoordinateSpan+Extensions.swift in Sources */,
+				989902C620FD856800865079 /* PremiumViewController.swift in Sources */,
+				9804F6E72066DAC900820153 /* HomeViewController.swift in Sources */,
+				9807EB3220C9ECD100B5F7DA /* HomeViewController+MKMapViewDelegate.swift in Sources */,
+				9897153B20F39A1E00F976FE /* PlaceDetailsCoordinator.swift in Sources */,
+				9804F6E32066D90A00820153 /* DataController.swift in Sources */,
+				9804F6AD2066D79300820153 /* AppDelegate.swift in Sources */,
+				988082CA20C1F31900B4E660 /* HomeViewModel.swift in Sources */,
+				98DD30832068203300AA7E75 /* Place.swift in Sources */,
+				9871B417214483460050C651 /* AppDelegate+ThemeConfiguration.swift in Sources */,
+				983341C820DC53AD006011CF /* PlaceSearchViewController.swift in Sources */,
+				9871B41221447B0A0050C651 /* PlaceDataController.swift in Sources */,
+				9877BBF420F1B009001D2688 /* SettingsCoordinator.swift in Sources */,
+				9890C173206C4E55003C6F8D /* ReminderCoordinator.swift in Sources */,
+				989902C220FD7D4500865079 /* IAPController.swift in Sources */,
+				989902C920FD85B600865079 /* PremiumCoordinator.swift in Sources */,
+				9877BBED20F1AA21001D2688 /* PlaceListCoordinator.swift in Sources */,
+				9807EB3420C9EEE800B5F7DA /* ReminderViewModel.swift in Sources */,
+				98DCD2B420DEBCB800A49897 /* MKMapView+Extensions.swift in Sources */,
+				98DD30952068587D00AA7E75 /* LocationController.swift in Sources */,
+				98DCD2BB20E5B52200A49897 /* Annotation.swift in Sources */,
+				9897153420F2D16400F976FE /* PlaceListViewModel.swift in Sources */,
+				98DD30812068203300AA7E75 /* Reminder.swift in Sources */,
+				9871B41421447DEF0050C651 /* ReminderDataController.swift in Sources */,
+				9804F6EA2066DBB400820153 /* UIViewController+Extensions.swift in Sources */,
+				98D02AC820673F0700E8BC91 /* SegmentedControlTableViewCell.swift in Sources */,
+				989BAB0720F41BC300C82DF7 /* UIColor+Extensions.swift in Sources */,
+				98DCD2C020E82BD500A49897 /* MKPlacemark+Extensions.swift in Sources */,
+				9897154420F3B5FA00F976FE /* Localized.generated.swift in Sources */,
+				9871B4192144836A0050C651 /* AppDelegate+NotificationsConfiguration.swift in Sources */,
+				986B9C7F2140CF5000A1D103 /* Bundle+Extensions.swift in Sources */,
+				9877BBF120F1ADA1001D2688 /* SettingsViewController.swift in Sources */,
+				9844E40521080B0B0071B116 /* String+Extensions.swift in Sources */,
+				98DD30902068373E00AA7E75 /* PlaceAnnotation.swift in Sources */,
+				9807EB3620C9F23000B5F7DA /* ReminderViewController+TableViewDataSource.swift in Sources */,
+				9890C16F206C494D003C6F8D /* AppCoordinator.swift in Sources */,
+				98DCD2BE20E8242B00A49897 /* CoordinatorType.swift in Sources */,
+				9804F6B52066D79300820153 /* Hereminders.xcdatamodeld in Sources */,
+				98F1C97D2066DFBD0008FF57 /* ReminderViewController.swift in Sources */,
+				989BAB0920F41D7800C82DF7 /* Button.swift in Sources */,
+				98DCD2B920E1C4C900A49897 /* ReminderListView.swift in Sources */,
+				9897154320F3B5FA00F976FE /* ImagesConstants.generated.swift in Sources */,
+				98F1C9892066E4570008FF57 /* UITableViewCell+Extensions.swift in Sources */,
+				9897153820F397F300F976FE /* PlaceDetailsViewController.swift in Sources */,
+				98F1C9842066E33F0008FF57 /* TextInputTableViewCell.swift in Sources */,
+				987AD731213E1FCB002F3D26 /* NotificationName+Extensions.swift in Sources */,
+				987AD733213F4537002F3D26 /* UIBarButtonItem+Extensions.swift in Sources */,
+				983341CB20DC561B006011CF /* PlaceSearchCoordinator.swift in Sources */,
+				9871B41B214484770050C651 /* AppDelegate+ServicesConfiguration.swift in Sources */,
+				9890C171206C4B16003C6F8D /* HomeCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9804F6BC2066D79300820153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9804F6C52066D79300820153 /* HeremindersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98DA12CF2119173C0090CA2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98942C3C21337A4800DA432B /* PlaceCollectionViewCell.swift in Sources */,
+				98C2EFC721191F070059D14C /* DataController.swift in Sources */,
+				987AD76521409EA0002F3D26 /* Hereminders.xcdatamodeld in Sources */,
+				98DA12D72119173C0090CA2B /* TodayViewController.swift in Sources */,
+				9871B415214482370050C651 /* PlaceDataController.swift in Sources */,
+				98DA12E421191CCD0090CA2B /* Place.swift in Sources */,
+				98DA12E521191CD00090CA2B /* Reminder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9804F6C22066D79300820153 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9804F6A82066D79300820153 /* Hereminders */;
+			targetProxy = 9804F6C12066D79300820153 /* PBXContainerItemProxy */;
+		};
+		98DA12DD2119173C0090CA2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98DA12D22119173C0090CA2B /* HeremindersTodayExtension */;
+			targetProxy = 98DA12DC2119173C0090CA2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9804F6B82066D79300820153 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9804F6B92066D79300820153 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		986B9C842140D58500A1D103 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				986B9C832140D58500A1D103 /* pt-BR */,
+				986B9C852140D58E00A1D103 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		986B9C8C2140D69000A1D103 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				986B9C8B2140D69000A1D103 /* pt-BR */,
+				986B9C8D2140D69300A1D103 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9897154720F3C6DE00F976FE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9897154620F3C6DE00F976FE /* en */,
+				9897154820F3C70900F976FE /* pt-BR */,
+				9897154920F3C7D000F976FE /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		98DA12D82119173C0090CA2B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98DA12D92119173C0090CA2B /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9804F6D22066D79300820153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9804F6D32066D79300820153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9804F6D52066D79300820153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCD8DDA0503BF862CCFD8674 /* Pods-Hereminders.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Hereminders/Resources/Hereminders.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = B8F644M47X;
+				INFOPLIST_FILE = Hereminders/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.going.Hereminders;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "db67c45d-a5b3-4eaa-a920-9be8199141c8";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.going.Hereminders";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9804F6D62066D79300820153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D39A76E2613F27BF979AD07F /* Pods-Hereminders.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Hereminders/Resources/Hereminders.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = B8F644M47X;
+				INFOPLIST_FILE = Hereminders/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.going.Hereminders;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6357360a-31b6-49d8-ba16-53a83d1243b9";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.going.Hereminders";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9804F6D82066D79300820153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9724BA3B22BE12DF38B2AB8B /* Pods-HeremindersTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8F644M47X;
+				INFOPLIST_FILE = HeremindersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.going.HeremindersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hereminders.app/Hereminders";
+			};
+			name = Debug;
+		};
+		9804F6D92066D79300820153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5E098537E96CE7E62A81278 /* Pods-HeremindersTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8F644M47X;
+				INFOPLIST_FILE = HeremindersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.going.HeremindersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hereminders.app/Hereminders";
+			};
+			name = Release;
+		};
+		98DA12E02119173C0090CA2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = HeremindersTodayExtension/Resources/HeremindersTodayExtension.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = B8F644M47X;
+				INFOPLIST_FILE = HeremindersTodayExtension/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.going.Hereminders.HeremindersTodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "edb1c8a6-7959-4ca0-a7e4-c3fcf8bcadae";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.going.Hereminders.HeremindersTodayExtension";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98DA12E12119173C0090CA2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = HeremindersTodayExtension/Resources/HeremindersTodayExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = B8F644M47X;
+				INFOPLIST_FILE = HeremindersTodayExtension/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.going.Hereminders.HeremindersTodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "321843fb-88f7-4f84-a41b-283d285bd072";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.going.Hereminders.HeremindersTodayExtension";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9804F6A42066D79300820153 /* Build configuration list for PBXProject "Hereminders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9804F6D22066D79300820153 /* Debug */,
+				9804F6D32066D79300820153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9804F6D42066D79300820153 /* Build configuration list for PBXNativeTarget "Hereminders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9804F6D52066D79300820153 /* Debug */,
+				9804F6D62066D79300820153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9804F6D72066D79300820153 /* Build configuration list for PBXNativeTarget "HeremindersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9804F6D82066D79300820153 /* Debug */,
+				9804F6D92066D79300820153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98DA12DF2119173C0090CA2B /* Build configuration list for PBXNativeTarget "HeremindersTodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98DA12E02119173C0090CA2B /* Debug */,
+				98DA12E12119173C0090CA2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9804F6B32066D79300820153 /* Hereminders.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9804F6B42066D79300820153 /* Hereminders.xcdatamodel */,
+			);
+			currentVersion = 9804F6B42066D79300820153 /* Hereminders.xcdatamodel */;
+			path = Hereminders.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9804F6A12066D79300820153 /* Project object */;
+}

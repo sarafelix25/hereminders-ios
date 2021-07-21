@@ -1,0 +1,9 @@
+output_dir: Hereminders/Resources/SwiftGen/
+xcassets:
+    paths: Hereminders/Resources/Assets.xcassets
+    templateName: swift4
+    output: ImagesConstants.generated.swift
+strings:
+    paths: Hereminders/Resources/Base.lproj/Localizable.strings
+    templateName: structured-swift4
+    output: Localized.generated.swift

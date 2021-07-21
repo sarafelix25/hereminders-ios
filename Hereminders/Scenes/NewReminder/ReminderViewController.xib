@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReminderViewController" customModule="Hereminders" customModuleProvider="target">
+            <connections>
+                <outlet property="addNewReminderButton" destination="bnr-Ul-YqO" id="rxd-4h-H3K"/>
+                <outlet property="mapHeaderView" destination="WhJ-wH-lIo" id="csA-u5-tYK"/>
+                <outlet property="tableView" destination="VNg-wj-AZY" id="dLb-oU-sya"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="VNg-wj-AZY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="591"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="rof-Rc-4yM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WhJ-wH-lIo" customClass="MapHeaderView" customModule="Hereminders" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WhJ-wH-lIo" firstAttribute="height" secondItem="rof-Rc-4yM" secondAttribute="height" id="1fY-wm-JET"/>
+                            <constraint firstItem="WhJ-wH-lIo" firstAttribute="width" secondItem="rof-Rc-4yM" secondAttribute="width" id="ANB-OK-6ob"/>
+                            <constraint firstItem="WhJ-wH-lIo" firstAttribute="leading" secondItem="rof-Rc-4yM" secondAttribute="leading" id="ohM-lh-GzW"/>
+                            <constraint firstItem="WhJ-wH-lIo" firstAttribute="top" secondItem="rof-Rc-4yM" secondAttribute="top" id="qUJ-li-RRh"/>
+                        </constraints>
+                    </view>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnr-Ul-YqO" customClass="Button" customModule="Hereminders" customModuleProvider="target">
+                    <rect key="frame" x="16" y="607" width="343" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="JbM-Qb-qE7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <state key="normal" title="Add new reminder"/>
+                    <connections>
+                        <action selector="didTapOnAddNewReminderButton:" destination="-1" eventType="touchUpInside" id="cW9-E1-LBD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bnr-Ul-YqO" secondAttribute="bottom" constant="16" id="BuV-fz-WTV"/>
+                <constraint firstItem="VNg-wj-AZY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FhZ-YF-00W"/>
+                <constraint firstItem="VNg-wj-AZY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Rb0-4A-nl5"/>
+                <constraint firstItem="bnr-Ul-YqO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="fUG-7A-tdg"/>
+                <constraint firstItem="VNg-wj-AZY" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ibE-9V-sIk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bnr-Ul-YqO" secondAttribute="trailing" constant="16" id="p1x-pE-lT6"/>
+                <constraint firstItem="bnr-Ul-YqO" firstAttribute="top" secondItem="VNg-wj-AZY" secondAttribute="bottom" constant="16" id="vYw-VH-VaP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

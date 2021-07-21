@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapHeaderView" customModule="Hereminders" customModuleProvider="target">
+            <connections>
+                <outlet property="addPlaceView" destination="gim-2J-xs9" id="K18-Ky-afd"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="eL8-lA-EMB"/>
+                <outlet property="mapView" destination="djt-0K-v79" id="qUO-uW-UHd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="djt-0K-v79">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </mapView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gim-2J-xs9">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfq-4q-X1v">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oal-RV-vxN">
+                            <rect key="frame" x="148" y="317" width="79" height="33"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <state key="normal" title="Add place"/>
+                            <connections>
+                                <action selector="didTapOnAddPlaceButton:" destination="-1" eventType="touchUpInside" id="qP0-rR-2ey"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Oal-RV-vxN" firstAttribute="centerX" secondItem="yfq-4q-X1v" secondAttribute="centerX" id="GDF-In-SB4"/>
+                        <constraint firstItem="Oal-RV-vxN" firstAttribute="centerY" secondItem="yfq-4q-X1v" secondAttribute="centerY" id="Hn4-fh-a5Y"/>
+                        <constraint firstAttribute="trailing" secondItem="yfq-4q-X1v" secondAttribute="trailing" id="jcf-VB-V0s"/>
+                        <constraint firstAttribute="bottom" secondItem="yfq-4q-X1v" secondAttribute="bottom" id="tvi-9e-h39"/>
+                        <constraint firstItem="yfq-4q-X1v" firstAttribute="leading" secondItem="gim-2J-xs9" secondAttribute="leading" id="wGT-Sd-14y"/>
+                        <constraint firstItem="yfq-4q-X1v" firstAttribute="top" secondItem="gim-2J-xs9" secondAttribute="top" id="xZg-WH-gtB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gim-2J-xs9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Mrf-Ed-tnc"/>
+                <constraint firstItem="djt-0K-v79" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NdL-g2-Doq"/>
+                <constraint firstItem="gim-2J-xs9" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Ouc-gg-np2"/>
+                <constraint firstItem="gim-2J-xs9" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="RoV-aL-3BS"/>
+                <constraint firstItem="djt-0K-v79" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="eEK-5w-5zy"/>
+                <constraint firstItem="djt-0K-v79" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gL1-GS-bVb"/>
+                <constraint firstItem="gim-2J-xs9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qEc-ls-hht"/>
+                <constraint firstItem="djt-0K-v79" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="s4K-dL-gEH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

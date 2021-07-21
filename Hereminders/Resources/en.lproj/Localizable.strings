@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Hereminders
+
+  Created by Rodrigo Borges on 7/9/18.
+  Copyright © 2018 Rodrigo Borges. All rights reserved.
+*/
+
+"Notification.Done" = "Done";
+"Notification.HereminderForYou" = "Hereminder for you!";
+
+"Home.Settings" = "Settings";
+"Home.Title" = "Hereminders";
+
+"ReminderList.OnEntry" = "Upon arrival";
+"ReminderList.OnExit" = "On leaving";
+"ReminderList.AddReminder" = "Add Hereminder";
+"ReminderList.SelectOrAddPlace" = "Select or add a new place";
+"ReminderList.AddNewPlace" = "Add new place";
+"ReminderList.Welcome" = "Welcome to Hereminders!";
+"ReminderList.Done" = "Done";
+"ReminderList.NoHereminders" = "No Hereminders here!";
+
+"Reminder.AddNewReminder" = "Add new Hereminder";
+"Reminder.Title" = "New Hereminder";
+"Reminder.Description" = "Description";
+"Reminder.DescriptionPlaceholder" = "Type the Hereminder description";
+"Reminder.When" = "When";
+"Reminder.OnEntry" = "Upon arrival";
+"Reminder.OnExit" = "On leaving";
+"Reminder.NoDescription" = "No description";
+
+"PlaceSearch.Title" = "Place Search";
+"PlaceSearch.NamePlaceholder" = "Type an address or place name";
+
+"PlaceList.Title" = "Place List";
+
+"PlaceDetails.NamePlaceholder" = "Type the place name";
+"PlaceDetails.Name" = "Name";
+"PlaceDetails.Address" = "Address";
+"PlaceDetails.Title" = "Place Details";
+
+"Settings.Title" = "Settings";
+"Settings.ManagePlaces" = "Manage places";
+"Settings.Version" = "Version %@ (%@)";
+"Settings.Places" = "Places";
+"Settings.About" = "About";
+"Settings.Premium" = "Premium";
+"Settings.BecomePremium" = "Become Premium 🤩";
+"Settings.Credits" = "Credits";
+"Settings.LogoCredit" = "Icons made by Smashicons (www.flaticon.com)";

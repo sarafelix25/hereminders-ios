@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Hereminders
+
+  Created by Rodrigo Borges on 7/9/18.
+  Copyright © 2018 Rodrigo Borges. All rights reserved.
+*/
+
+"Notification.Done" = "Done";
+"Notification.HereminderForYou" = "Hereminder para você!";
+
+"Home.Settings" = "Configurações";
+"Home.Title" = "Hereminders";
+
+"ReminderList.OnEntry" = "Ao chegar";
+"ReminderList.OnExit" = "Ao sair";
+"ReminderList.AddReminder" = "Adicionar Hereminder";
+"ReminderList.SelectOrAddPlace" = "Selecione ou adicione um novo local";
+"ReminderList.AddNewPlace" = "Adicionar novo local";
+"ReminderList.Welcome" = "Bem-vindo(a) ao Hereminders!";
+"ReminderList.Done" = "Concluído";
+"ReminderList.NoHereminders" = "Sem Hereminders aqui!";
+
+"Reminder.AddNewReminder" = "Adicionar novo Hereminder";
+"Reminder.Title" = "Novo Hereminder";
+"Reminder.Description" = "Descrição";
+"Reminder.DescriptionPlaceholder" = "Digite a descrição do Hereminder";
+"Reminder.When" = "Quando";
+"Reminder.OnEntry" = "Ao chegar";
+"Reminder.OnExit" = "Ao sair";
+"Reminder.NoDescription" = "Sem descrição";
+
+"PlaceSearch.Title" = "Busca de Local";
+"PlaceSearch.NamePlaceholder" = "Digite um endereço ou nome do local";
+
+"PlaceList.Title" = "Lista de Locais";
+
+"PlaceDetails.NamePlaceholder" = "Digite o nome do local";
+"PlaceDetails.Name" = "Nome";
+"PlaceDetails.Address" = "Endereço";
+"PlaceDetails.Title" = "Detalhes do Local";
+
+"Settings.Title" = "Configurações";
+"Settings.ManagePlaces" = "Gerenciar locais";
+"Settings.Version" = "Versão %@ (%@)";
+"Settings.Places" = "Locais";
+"Settings.About" = "Sobre";
+"Settings.Premium" = "Premium";
+"Settings.BecomePremium" = "Tornar-se Premium 🤩";
+"Settings.Credits" = "Créditos";
+"Settings.LogoCredit" = "Ícones feitos por Smashicons (www.flaticon.com)";

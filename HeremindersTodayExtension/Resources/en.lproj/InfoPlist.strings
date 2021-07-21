@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  Hereminders
+
+  Created by Rodrigo Borges on 9/6/18.
+  Copyright © 2018 Rodrigo Borges. All rights reserved.
+*/
+
+"CFBundleDisplayName" = "Add new Hereminder";
