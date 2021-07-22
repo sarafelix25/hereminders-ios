@@ -11,6 +11,13 @@ DEPENDENCIES:
   - RxSwift
   - SwiftGen
 
+SPEC REPOS:
+  trunk:
+    - Crashlytics
+    - Fabric
+    - RxSwift
+    - SwiftGen
+
 SPEC CHECKSUMS:
   Crashlytics: 0360624eea1c978a743feddb2fb1ef8b37fb7a0d
   Fabric: bda89e242bce1b7b8ab264248cf3407774ce0095
@@ -19,4 +26,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: b8637c3623171793e7acd439a498556e93c212a6
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.10.1
