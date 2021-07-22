@@ -681,7 +681,6 @@
 				9804F6A62066D79300820153 /* Frameworks */,
 				9804F6A72066D79300820153 /* Resources */,
 				23A07408A286AC773B8E5100 /* [CP] Embed Pods Frameworks */,
-				D432244B6FD9F78B89F05FBD /* [CP] Copy Pods Resources */,
 				9897153C20F3B26400F976FE /* Fabric Script */,
 				98DA12CE211917090090CA2B /* Embed App Extensions */,
 				987AD75B213F633D002F3D26 /* Embed Watch Content */,
@@ -704,8 +703,6 @@
 				9804F6BC2066D79300820153 /* Sources */,
 				9804F6BD2066D79300820153 /* Frameworks */,
 				9804F6BE2066D79300820153 /* Resources */,
-				1DCBB3B0CCDD6E2D28910E1C /* [CP] Embed Pods Frameworks */,
-				6F842C8438B529B7D478B3DF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -842,28 +839,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1DCBB3B0CCDD6E2D28910E1C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeremindersTests/Pods-HeremindersTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		23A07408A286AC773B8E5100 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Hereminders/Pods-Hereminders-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Hereminders/Pods-Hereminders-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -872,7 +854,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hereminders/Pods-Hereminders-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hereminders/Pods-Hereminders-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		273EC2EB658F38FB89C5E346 /* [CP] Check Pods Manifest.lock */ = {
@@ -891,21 +873,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6F842C8438B529B7D478B3DF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeremindersTests/Pods-HeremindersTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		884F9C339C730D672A45877F /* [CP] Check Pods Manifest.lock */ = {
@@ -953,21 +920,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen\n";
-		};
-		D432244B6FD9F78B89F05FBD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hereminders/Pods-Hereminders-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
