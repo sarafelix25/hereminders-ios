@@ -50,7 +50,7 @@ final class PlaceDetailsViewController: UIViewController {
 
         TextInputTableViewCell.registerXib(in: self.tableView)
 
-        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 44.0
         self.tableView.dataSource = self
     }

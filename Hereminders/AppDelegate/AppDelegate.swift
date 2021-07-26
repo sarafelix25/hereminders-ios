@@ -23,15 +23,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var reminderController: ReminderDataControllerType
         = ReminderDataController(dataController: self.dataController, placeController: self.placeController)
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         self.configureTheme()
 
         self.configureWindow()
 
         self.configureNotifications()
-
-        self.configureServices()
 
         return true
     }
@@ -74,7 +72,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         completionHandler(false)
     }
 
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
 
         guard let queryString = URLComponents(url: url, resolvingAgainstBaseURL: true), let host = queryString.host else {
             return false

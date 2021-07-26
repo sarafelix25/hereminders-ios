@@ -12,7 +12,7 @@ class Button: UIButton {
 
     override var intrinsicContentSize: CGSize {
 
-        return CGSize(width: UIViewNoIntrinsicMetric, height: 44)
+        return CGSize(width: UIView.noIntrinsicMetric, height: 44)
     }
 
     @objc dynamic var cornerRadius: CGFloat {

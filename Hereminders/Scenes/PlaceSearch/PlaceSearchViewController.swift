@@ -32,7 +32,6 @@ class PlaceSearchViewController: UIViewController {
     private lazy var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
-        searchController.dimsBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = L10n.Placesearch.namePlaceholder
         return searchController
     }()
@@ -115,14 +114,14 @@ extension PlaceSearchViewController: UISearchResultsUpdating {
 
         let text = searchController.searchBar.text
 
-        let request = MKLocalSearchRequest()
+        let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = text
 
         self.lastSearch = MKLocalSearch(request: request)
         self.lastSearch?.start(completionHandler: self.handleSearch)
     }
 
-    func handleSearch(response: MKLocalSearchResponse?, error: Error?) {
+    func handleSearch(response: MKLocalSearch.Response?, error: Error?) {
 
         let places: [PlaceResult] = response?.mapItems.map({ mapItem in
 
