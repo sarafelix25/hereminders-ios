@@ -24,3 +24,8 @@ O Hereminders é um app de lembretes geolocalizados, implementado em Swift com a
 # Pessoas Contribuidoras
 - Rodrigo Borges - [GitHub](https://github.com/rdgborges) / [Twitter](https://twitter.com/rdgborges)
 
+# Sobre a Devpass
+
+A Devpass é uma comunidade de pessoas desenvolvedoras de alto potencial acelerando suas carreiras através de desenvolvimento de produtos reais, como o Hereminders, e conexões com as principais lideranças de tecnologia do país, através de mentorias particulares e Tech Talks.
+
+Se interessou? Acesse www.devpass.com.br e se inscreva na nossa lista para ficar por dentro das novidades!
