@@ -41,7 +41,7 @@ class HomeCoordinator: CoordinatorType {
         
         let viewController = HomeViewController(viewModel: viewModel)
         viewController.delegate = self
-        self.navigationController.addChildViewController(viewController)
+        self.navigationController.addChild(viewController)
     }
 
     func showReminder(_ reminder: Reminder?, _ place: Place?) {

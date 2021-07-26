@@ -64,7 +64,7 @@ final class ReminderViewModel {
         let content = UNMutableNotificationContent()
         content.title = placeName
         content.body = self.viewState.description ?? ""
-        content.sound = .default()
+        content.sound = .default
         content.categoryIdentifier = notificationCategory
         content.threadIdentifier = [notificationCategory, placeIdentifier].joined(separator: ".")
 

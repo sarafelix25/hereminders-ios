@@ -23,7 +23,7 @@ platform :ios do
     upload_to_testflight
   end
 
-  lane :tinder do
+  lane :certificates do
     match(app_identifier: ["com.going.Hereminders", "com.going.Hereminders.HeremindersTodayExtension", "com.going.Hereminders.watchkitapp", "com.going.Hereminders.watchkitapp.watchkitextension"], type: "development")
     match(app_identifier: ["com.going.Hereminders", "com.going.Hereminders.HeremindersTodayExtension", "com.going.Hereminders.watchkitapp", "com.going.Hereminders.watchkitapp.watchkitextension"], type: "appstore")
   end

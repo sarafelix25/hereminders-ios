@@ -36,7 +36,6 @@
 		9871B415214482370050C651 /* PlaceDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9871B41121447B0A0050C651 /* PlaceDataController.swift */; };
 		9871B417214483460050C651 /* AppDelegate+ThemeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9871B416214483460050C651 /* AppDelegate+ThemeConfiguration.swift */; };
 		9871B4192144836A0050C651 /* AppDelegate+NotificationsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9871B4182144836A0050C651 /* AppDelegate+NotificationsConfiguration.swift */; };
-		9871B41B214484770050C651 /* AppDelegate+ServicesConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9871B41A214484770050C651 /* AppDelegate+ServicesConfiguration.swift */; };
 		9877BBEA20F1A824001D2688 /* PlaceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9877BBE820F1A824001D2688 /* PlaceListViewController.swift */; };
 		9877BBEB20F1A824001D2688 /* PlaceListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9877BBE920F1A824001D2688 /* PlaceListViewController.xib */; };
 		9877BBED20F1AA21001D2688 /* PlaceListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9877BBEC20F1AA21001D2688 /* PlaceListCoordinator.swift */; };
@@ -61,7 +60,6 @@
 		9897154420F3B5FA00F976FE /* Localized.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9897154220F3B5FA00F976FE /* Localized.generated.swift */; };
 		9897154520F3C6DE00F976FE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9897154720F3C6DE00F976FE /* Localizable.strings */; };
 		989902BF20FD73E000865079 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989902BE20FD73E000865079 /* StoreKit.framework */; };
-		989902C220FD7D4500865079 /* IAPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989902C120FD7D4500865079 /* IAPController.swift */; };
 		989902C620FD856800865079 /* PremiumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989902C420FD856800865079 /* PremiumViewController.swift */; };
 		989902C720FD856800865079 /* PremiumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989902C520FD856800865079 /* PremiumViewController.xib */; };
 		989902C920FD85B600865079 /* PremiumCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989902C820FD85B600865079 /* PremiumCoordinator.swift */; };
@@ -178,7 +176,6 @@
 		9871B41321447DEF0050C651 /* ReminderDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDataController.swift; sourceTree = "<group>"; };
 		9871B416214483460050C651 /* AppDelegate+ThemeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+ThemeConfiguration.swift"; sourceTree = "<group>"; };
 		9871B4182144836A0050C651 /* AppDelegate+NotificationsConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+NotificationsConfiguration.swift"; sourceTree = "<group>"; };
-		9871B41A214484770050C651 /* AppDelegate+ServicesConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+ServicesConfiguration.swift"; sourceTree = "<group>"; };
 		9877BBE820F1A824001D2688 /* PlaceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListViewController.swift; sourceTree = "<group>"; };
 		9877BBE920F1A824001D2688 /* PlaceListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceListViewController.xib; sourceTree = "<group>"; };
 		9877BBEC20F1AA21001D2688 /* PlaceListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListCoordinator.swift; sourceTree = "<group>"; };
@@ -204,7 +201,6 @@
 		9897154820F3C70900F976FE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		9897154920F3C7D000F976FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		989902BE20FD73E000865079 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		989902C120FD7D4500865079 /* IAPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPController.swift; sourceTree = "<group>"; };
 		989902C420FD856800865079 /* PremiumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumViewController.swift; sourceTree = "<group>"; };
 		989902C520FD856800865079 /* PremiumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PremiumViewController.xib; sourceTree = "<group>"; };
 		989902C820FD85B600865079 /* PremiumCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumCoordinator.swift; sourceTree = "<group>"; };
@@ -372,7 +368,6 @@
 				9804F6AC2066D79300820153 /* AppDelegate.swift */,
 				9871B416214483460050C651 /* AppDelegate+ThemeConfiguration.swift */,
 				9871B4182144836A0050C651 /* AppDelegate+NotificationsConfiguration.swift */,
-				9871B41A214484770050C651 /* AppDelegate+ServicesConfiguration.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -412,7 +407,6 @@
 		9804F6E12066D88900820153 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				989902C020FD7D2D00865079 /* IAP */,
 				98DD30922068586400AA7E75 /* Location */,
 				98DD30912068585900AA7E75 /* CoreData */,
 			);
@@ -508,14 +502,6 @@
 				9897154220F3B5FA00F976FE /* Localized.generated.swift */,
 			);
 			path = SwiftGen;
-			sourceTree = "<group>";
-		};
-		989902C020FD7D2D00865079 /* IAP */ = {
-			isa = PBXGroup;
-			children = (
-				989902C120FD7D4500865079 /* IAPController.swift */,
-			);
-			path = IAP;
 			sourceTree = "<group>";
 		};
 		989902C320FD854900865079 /* Premium */ = {
@@ -738,7 +724,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Rodrigo Borges";
 				TargetAttributes = {
 					9804F6A82066D79300820153 = {
@@ -947,7 +933,6 @@
 				9871B41221447B0A0050C651 /* PlaceDataController.swift in Sources */,
 				9877BBF420F1B009001D2688 /* SettingsCoordinator.swift in Sources */,
 				9890C173206C4E55003C6F8D /* ReminderCoordinator.swift in Sources */,
-				989902C220FD7D4500865079 /* IAPController.swift in Sources */,
 				989902C920FD85B600865079 /* PremiumCoordinator.swift in Sources */,
 				9877BBED20F1AA21001D2688 /* PlaceListCoordinator.swift in Sources */,
 				9807EB3420C9EEE800B5F7DA /* ReminderViewModel.swift in Sources */,
@@ -981,7 +966,6 @@
 				987AD731213E1FCB002F3D26 /* NotificationName+Extensions.swift in Sources */,
 				987AD733213F4537002F3D26 /* UIBarButtonItem+Extensions.swift in Sources */,
 				983341CB20DC561B006011CF /* PlaceSearchCoordinator.swift in Sources */,
-				9871B41B214484770050C651 /* AppDelegate+ServicesConfiguration.swift in Sources */,
 				9890C171206C4B16003C6F8D /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1122,12 +1106,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1176,10 +1161,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1191,15 +1177,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Hereminders/Resources/Hereminders.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = B8F644M47X;
 				INFOPLIST_FILE = Hereminders/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.going.Hereminders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "db67c45d-a5b3-4eaa-a920-9be8199141c8";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.going.Hereminders";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1218,9 +1204,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.going.Hereminders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6357360a-31b6-49d8-ba16-53a83d1243b9";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.going.Hereminders";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1271,7 +1256,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = B8F644M47X;
 				INFOPLIST_FILE = HeremindersTodayExtension/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.going.Hereminders.HeremindersTodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1294,7 +1279,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = B8F644M47X;
 				INFOPLIST_FILE = HeremindersTodayExtension/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.going.Hereminders.HeremindersTodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -104,7 +104,7 @@ final class HomeViewController: UIViewController {
             let coordinate = CLLocationCoordinate2D(latitude: place.0.latitude,
                                                     longitude: place.0.longitude)
             let circle = MKCircle(center: coordinate, radius: 100)
-            self.mapView.add(circle)
+            self.mapView.addOverlay(circle)
         } else {
 
             self.reminderListView.render(with: nil)
