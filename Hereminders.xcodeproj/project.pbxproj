@@ -97,6 +97,7 @@
 		98F1C98D2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1C98C2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift */; };
 		98F1C9912066E6EF0008FF57 /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1C98F2066E6EF0008FF57 /* SliderTableViewCell.swift */; };
 		98F1C9922066E6EF0008FF57 /* SliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F1C9902066E6EF0008FF57 /* SliderTableViewCell.xib */; };
+		BC51A83F26C471B60022780E /* UITableViewCellUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -240,6 +241,7 @@
 		98F1C98C2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
 		98F1C98F2066E6EF0008FF57 /* SliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTableViewCell.swift; sourceTree = "<group>"; };
 		98F1C9902066E6EF0008FF57 /* SliderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderTableViewCell.xib; sourceTree = "<group>"; };
+		BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellUnitTests.swift; sourceTree = "<group>"; };
 		CCD8DDA0503BF862CCFD8674 /* Pods-Hereminders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hereminders.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hereminders/Pods-Hereminders.debug.xcconfig"; sourceTree = "<group>"; };
 		D39A76E2613F27BF979AD07F /* Pods-Hereminders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hereminders.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hereminders/Pods-Hereminders.release.xcconfig"; sourceTree = "<group>"; };
 		D5E098537E96CE7E62A81278 /* Pods-HeremindersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeremindersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeremindersTests/Pods-HeremindersTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -344,6 +346,7 @@
 			children = (
 				9804F6C42066D79300820153 /* HeremindersTests.swift */,
 				9804F6C62066D79300820153 /* Info.plist */,
+				BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */,
 			);
 			path = HeremindersTests;
 			sourceTree = "<group>";
@@ -975,6 +978,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9804F6C52066D79300820153 /* HeremindersTests.swift in Sources */,
+				BC51A83F26C471B60022780E /* UITableViewCellUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
