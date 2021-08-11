@@ -13,10 +13,13 @@ import XCTest
 class UITableViewCellUnitTests: XCTestCase {
 	
 	func testClassIdentifier() {
-		let expected = "UITableViewCell"
-		let sut = UITableViewCell.classIdentifier()
+		let expected = "MockCell"
+		let sut = MockCell.classIdentifier()
 		
 		XCTAssert(sut == expected)
 	}
 
+}
+
+class MockCell: UITableViewCell {
 }
