@@ -13,7 +13,6 @@
 		9804F6B52066D79300820153 /* Hereminders.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9804F6B32066D79300820153 /* Hereminders.xcdatamodeld */; };
 		9804F6B72066D79300820153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9804F6B62066D79300820153 /* Assets.xcassets */; };
 		9804F6BA2066D79300820153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9804F6B82066D79300820153 /* LaunchScreen.storyboard */; };
-		9804F6C52066D79300820153 /* HeremindersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9804F6C42066D79300820153 /* HeremindersTests.swift */; };
 		9804F6E32066D90A00820153 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9804F6E22066D90A00820153 /* DataController.swift */; };
 		9804F6E72066DAC900820153 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9804F6E52066DAC900820153 /* HomeViewController.swift */; };
 		9804F6E82066DAC900820153 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9804F6E62066DAC900820153 /* HomeViewController.xib */; };
@@ -23,6 +22,7 @@
 		9807EB3620C9F23000B5F7DA /* ReminderViewController+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9807EB3520C9F23000B5F7DA /* ReminderViewController+TableViewDataSource.swift */; };
 		980B048820CB58C600121291 /* MapHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980B048720CB58C600121291 /* MapHeaderView.swift */; };
 		980B048A20CB58EA00121291 /* MapHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980B048920CB58EA00121291 /* MapHeaderView.xib */; };
+		9811F20F26C3358E005F71E3 /* UIViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811F20E26C3358E005F71E3 /* UIViewControllerUnitTests.swift */; };
 		983341C820DC53AD006011CF /* PlaceSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983341C620DC53AD006011CF /* PlaceSearchViewController.swift */; };
 		983341C920DC53AD006011CF /* PlaceSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 983341C720DC53AD006011CF /* PlaceSearchViewController.xib */; };
 		983341CB20DC561B006011CF /* PlaceSearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983341CA20DC561B006011CF /* PlaceSearchCoordinator.swift */; };
@@ -153,7 +153,6 @@
 		9804F6B92066D79300820153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9804F6BB2066D79300820153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9804F6C02066D79300820153 /* HeremindersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeremindersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9804F6C42066D79300820153 /* HeremindersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeremindersTests.swift; sourceTree = "<group>"; };
 		9804F6C62066D79300820153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9804F6E22066D90A00820153 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		9804F6E52066DAC900820153 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +163,7 @@
 		9807EB3520C9F23000B5F7DA /* ReminderViewController+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+TableViewDataSource.swift"; sourceTree = "<group>"; };
 		980B048720CB58C600121291 /* MapHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHeaderView.swift; sourceTree = "<group>"; };
 		980B048920CB58EA00121291 /* MapHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapHeaderView.xib; sourceTree = "<group>"; };
+		9811F20E26C3358E005F71E3 /* UIViewControllerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerUnitTests.swift; sourceTree = "<group>"; };
 		983341C620DC53AD006011CF /* PlaceSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchViewController.swift; sourceTree = "<group>"; };
 		983341C720DC53AD006011CF /* PlaceSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceSearchViewController.xib; sourceTree = "<group>"; };
 		983341CA20DC561B006011CF /* PlaceSearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchCoordinator.swift; sourceTree = "<group>"; };
@@ -344,9 +344,9 @@
 		9804F6C32066D79300820153 /* HeremindersTests */ = {
 			isa = PBXGroup;
 			children = (
-				9804F6C42066D79300820153 /* HeremindersTests.swift */,
 				9804F6C62066D79300820153 /* Info.plist */,
 				DE1E78F626C41B1F002A4CBA /* StringUnitTests.swift */,
+				9811F20E26C3358E005F71E3 /* UIViewControllerUnitTests.swift */,
 			);
 			path = HeremindersTests;
 			sourceTree = "<group>";
@@ -978,7 +978,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE1E78F726C41B1F002A4CBA /* StringUnitTests.swift in Sources */,
-				9804F6C52066D79300820153 /* HeremindersTests.swift in Sources */,
+				9811F20F26C3358E005F71E3 /* UIViewControllerUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
