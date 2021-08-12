@@ -4,25 +4,6 @@
    <FileRef
       location = "group:Hereminders.xcodeproj">
    </FileRef>
-   <Group
-      location = "group:fastlane"
-      name = "fastlane">
-      <FileRef
-         location = "group:fastlane/Appfile">
-      </FileRef>
-      <FileRef
-         location = "group:fastlane/Fastfile">
-      </FileRef>
-      <FileRef
-         location = "group:fastlane/README.md">
-      </FileRef>
-      <FileRef
-         location = "group:fastlane/Matchfile">
-      </FileRef>
-      <FileRef
-         location = "group:fastlane/report.xml">
-      </FileRef>
-   </Group>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
