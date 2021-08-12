@@ -12,13 +12,21 @@ import XCTest
 class UIColorUnitTests: XCTestCase {
 
     func testCustomUIColors() throws {
-        let inputBlue = UIColor.init(red: 66, green: 148, blue: 244)
-        let inputGreen = UIColor.init(red: 90, green: 182, blue: 155)
+        
+        var red: CGFloat = 0
+        var green: CGFloat = 0
+        var blue: CGFloat = 0
+        var alpha: CGFloat = 0
 
-        let expectedBlue = UIColor.heremindersBlue
-        let expectedGreen = UIColor.heremindersGreen
+        let red1:CGFloat=0, green1:CGFloat=0, blue1:CGFloat=0, alpha1:CGFloat=0
+        UIColor.heremindersBlue.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
 
-        XCTAssertEqual(expectedBlue, inputBlue)
-        XCTAssertEqual(expectedGreen, inputGreen)
+        let red2:CGFloat=0, green2:CGFloat=0, blue2:CGFloat=0, alpha2:CGFloat=0
+        UIColor.heremindersGreen.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+
+        XCTAssertEqual(red1, red2)
+        XCTAssertEqual(green1, green2)
+        XCTAssertEqual(blue1, blue2)
+        XCTAssertEqual(alpha1, alpha2)
     }
 }
