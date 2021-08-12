@@ -23,6 +23,7 @@
 		9807EB3620C9F23000B5F7DA /* ReminderViewController+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9807EB3520C9F23000B5F7DA /* ReminderViewController+TableViewDataSource.swift */; };
 		980B048820CB58C600121291 /* MapHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980B048720CB58C600121291 /* MapHeaderView.swift */; };
 		980B048A20CB58EA00121291 /* MapHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980B048920CB58EA00121291 /* MapHeaderView.xib */; };
+		9811F20F26C3358E005F71E3 /* UIViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811F20E26C3358E005F71E3 /* UIViewControllerUnitTests.swift */; };
 		983341C820DC53AD006011CF /* PlaceSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983341C620DC53AD006011CF /* PlaceSearchViewController.swift */; };
 		983341C920DC53AD006011CF /* PlaceSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 983341C720DC53AD006011CF /* PlaceSearchViewController.xib */; };
 		983341CB20DC561B006011CF /* PlaceSearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983341CA20DC561B006011CF /* PlaceSearchCoordinator.swift */; };
@@ -97,6 +98,10 @@
 		98F1C98D2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1C98C2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift */; };
 		98F1C9912066E6EF0008FF57 /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1C98F2066E6EF0008FF57 /* SliderTableViewCell.swift */; };
 		98F1C9922066E6EF0008FF57 /* SliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F1C9902066E6EF0008FF57 /* SliderTableViewCell.xib */; };
+		B19B82A526C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B82A426C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift */; };
+		BC51A83F26C471B60022780E /* UITableViewCellUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */; };
+		B1F276EB26C40E0900996346 /* MKCoordinateSpanUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */; };
+		DE1E78F726C41B1F002A4CBA /* StringUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E78F626C41B1F002A4CBA /* StringUnitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +168,7 @@
 		9807EB3520C9F23000B5F7DA /* ReminderViewController+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+TableViewDataSource.swift"; sourceTree = "<group>"; };
 		980B048720CB58C600121291 /* MapHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHeaderView.swift; sourceTree = "<group>"; };
 		980B048920CB58EA00121291 /* MapHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapHeaderView.xib; sourceTree = "<group>"; };
+		9811F20E26C3358E005F71E3 /* UIViewControllerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerUnitTests.swift; sourceTree = "<group>"; };
 		983341C620DC53AD006011CF /* PlaceSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchViewController.swift; sourceTree = "<group>"; };
 		983341C720DC53AD006011CF /* PlaceSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceSearchViewController.xib; sourceTree = "<group>"; };
 		983341CA20DC561B006011CF /* PlaceSearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchCoordinator.swift; sourceTree = "<group>"; };
@@ -240,9 +246,13 @@
 		98F1C98C2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
 		98F1C98F2066E6EF0008FF57 /* SliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTableViewCell.swift; sourceTree = "<group>"; };
 		98F1C9902066E6EF0008FF57 /* SliderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderTableViewCell.xib; sourceTree = "<group>"; };
+		B19B82A426C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtensionsUnitTests.swift; sourceTree = "<group>"; };
+		BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellUnitTests.swift; sourceTree = "<group>"; };
+		B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateSpanUnitTests.swift; sourceTree = "<group>"; };
 		CCD8DDA0503BF862CCFD8674 /* Pods-Hereminders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hereminders.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hereminders/Pods-Hereminders.debug.xcconfig"; sourceTree = "<group>"; };
 		D39A76E2613F27BF979AD07F /* Pods-Hereminders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hereminders.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hereminders/Pods-Hereminders.release.xcconfig"; sourceTree = "<group>"; };
 		D5E098537E96CE7E62A81278 /* Pods-HeremindersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeremindersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeremindersTests/Pods-HeremindersTests.release.xcconfig"; sourceTree = "<group>"; };
+		DE1E78F626C41B1F002A4CBA /* StringUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUnitTests.swift; sourceTree = "<group>"; };
 		F1E294923822D767E0E2F371 /* Pods_HeremindersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeremindersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEEA0847B9554E1F3C321E20 /* Pods-HeremindersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeremindersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeremindersUITests/Pods-HeremindersUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -344,6 +354,11 @@
 			children = (
 				9804F6C62066D79300820153 /* Info.plist */,
 				1349ADC026C5411100981469 /* UnitTestStructPlaceResult.swift */,
+				B19B82A426C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift */,
+				BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */,
+				B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */,
+				DE1E78F626C41B1F002A4CBA /* StringUnitTests.swift */,
+				9811F20E26C3358E005F71E3 /* UIViewControllerUnitTests.swift */,
 			);
 			path = HeremindersTests;
 			sourceTree = "<group>";
@@ -976,6 +991,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1349ADC126C5411100981469 /* UnitTestStructPlaceResult.swift in Sources */,
+				B19B82A526C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift in Sources */,
+				BC51A83F26C471B60022780E /* UITableViewCellUnitTests.swift in Sources */,
+				B1F276EB26C40E0900996346 /* MKCoordinateSpanUnitTests.swift in Sources */,
+				DE1E78F726C41B1F002A4CBA /* StringUnitTests.swift in Sources */,
+				9811F20F26C3358E005F71E3 /* UIViewControllerUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1175,7 +1195,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CCD8DDA0503BF862CCFD8674 /* Pods-Hereminders.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Hereminders/Resources/Hereminders.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1195,7 +1214,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D39A76E2613F27BF979AD07F /* Pods-Hereminders.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Hereminders/Resources/Hereminders.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -1215,7 +1233,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9724BA3B22BE12DF38B2AB8B /* Pods-HeremindersTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1235,7 +1252,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D5E098537E96CE7E62A81278 /* Pods-HeremindersTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
