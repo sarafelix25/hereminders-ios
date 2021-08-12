@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1349ADC126C5411100981469 /* UnitTestStructPlaceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349ADC026C5411100981469 /* UnitTestStructPlaceResult.swift */; };
 		494B8DFE8651D81614F0892D /* Pods_HeremindersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D88789351E1BF3D95B871DD /* Pods_HeremindersTests.framework */; };
 		89B2AFC2AD9B6003B627FFD3 /* Pods_Hereminders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150D92276C2DFA070189FDC0 /* Pods_Hereminders.framework */; };
 		9804F6AD2066D79300820153 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9804F6AC2066D79300820153 /* AppDelegate.swift */; };
@@ -145,6 +146,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1349ADC026C5411100981469 /* UnitTestStructPlaceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestStructPlaceResult.swift; sourceTree = "<group>"; };
 		150D92276C2DFA070189FDC0 /* Pods_Hereminders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hereminders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D88789351E1BF3D95B871DD /* Pods_HeremindersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeremindersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4F058DE6C0C2862A2BE666 /* Pods-HeremindersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeremindersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeremindersUITests/Pods-HeremindersUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -351,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				9804F6C62066D79300820153 /* Info.plist */,
+				1349ADC026C5411100981469 /* UnitTestStructPlaceResult.swift */,
 				B19B82A426C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift */,
 				BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */,
 				B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */,
@@ -753,6 +756,7 @@
 					};
 					9804F6BF2066D79300820153 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1250;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 9804F6A82066D79300820153;
 					};
@@ -986,6 +990,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1349ADC126C5411100981469 /* UnitTestStructPlaceResult.swift in Sources */,
 				B19B82A526C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift in Sources */,
 				BC51A83F26C471B60022780E /* UITableViewCellUnitTests.swift in Sources */,
 				B1F276EB26C40E0900996346 /* MKCoordinateSpanUnitTests.swift in Sources */,
@@ -1229,12 +1234,14 @@
 			baseConfigurationReference = 9724BA3B22BE12DF38B2AB8B /* Pods-HeremindersTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8F644M47X;
 				INFOPLIST_FILE = HeremindersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.going.HeremindersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hereminders.app/Hereminders";
@@ -1246,6 +1253,7 @@
 			baseConfigurationReference = D5E098537E96CE7E62A81278 /* Pods-HeremindersTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8F644M47X;
 				INFOPLIST_FILE = HeremindersTests/Info.plist;
