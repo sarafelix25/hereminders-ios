@@ -13,7 +13,7 @@ import Contacts
 
 class MKPlaceMarkExtensionsUnitTest: XCTestCase {
 
-    func testExample() throws {
+    func unitTestPlaceMarkExtensions() throws {
         
         let coords = CLLocationCoordinate2D(latitude: 51.5083, longitude: -0.1384)
         
@@ -22,8 +22,6 @@ class MKPlaceMarkExtensionsUnitTest: XCTestCase {
         let placemark = MKPlacemark(coordinate: coords, addressDictionary: address)
         
         let addressTest = placemark.formattedAddress()
-        
-        print(addressTest)
         
         let correctAddress = "Rua Bela Cintra, 1491, Consolação"
 
