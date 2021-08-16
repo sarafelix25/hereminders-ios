@@ -34,6 +34,11 @@ O Hereminders é um app de lembretes geolocalizados, implementado em Swift com a
 # Pessoas Contribuidoras
 
 - Rodrigo Borges - [GitHub](https://github.com/rdgborges) / [Twitter](https://twitter.com/rdgborges)
+- Alexandre Cardoso - [GitHub](https://github.com/AlexandreBCardoso) / [LinkedIn](https://www.linkedin.com/in/alexandre-barbosa-cardoso-a02a3a173/)
+- Dairan Temoteo - [GitHub](http://github.com/dairan) / [LinkedIn](https://www.linkedin.com/in/dairan/)
+- Gabriela Sillis - [GitHub](https://github.com/gsillis) / [LinkedIn](https://www.linkedin.com/in/gabrielasillis/)
+- Diego Janjardi Briz Llopis - [GitHub](https://github.com/diegollopis) / [LinkedIn](https://www.linkedin.com/in/diego-llopis36/)
+- Sara Felix - [GitHub](https://github.com/sarafelix25) / [LinkedIn](https://www.linkedin.com/in/sarabfelix/)
 
 # Sobre a Devpass
 
