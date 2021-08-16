@@ -8,6 +8,7 @@ target 'Hereminders' do
 
   target 'HeremindersTests' do
     inherit! :search_paths
+  pod 'SnapshotTesting', '~> 1.9.0'
 
   end
 
