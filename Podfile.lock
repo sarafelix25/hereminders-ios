@@ -1,20 +1,24 @@
 PODS:
   - RxSwift (4.1.2)
+  - SnapshotTesting (1.9.0)
   - SwiftGen (5.3.0)
 
 DEPENDENCIES:
   - RxSwift
+  - SnapshotTesting (~> 1.9.0)
   - SwiftGen
 
 SPEC REPOS:
   trunk:
     - RxSwift
+    - SnapshotTesting
     - SwiftGen
 
 SPEC CHECKSUMS:
   RxSwift: e49536837d9901277638493ea537394d4b55f570
+  SnapshotTesting: 6141c48b6aa76ead61431ca665c14ab9a066c53b
   SwiftGen: 4379bd3640b0a212a0f6ea3c494adba385513d10
 
-PODFILE CHECKSUM: 74cc621d80b07599c48a880b188ffd1d9b93882c
+PODFILE CHECKSUM: b4f75c5f545f027e85e5fd3ddadbf589c43d182c
 
-COCOAPODS: 1.10.2
+COCOAPODS: 1.10.1
