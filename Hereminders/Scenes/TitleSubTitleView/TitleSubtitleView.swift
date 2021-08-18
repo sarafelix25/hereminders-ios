@@ -25,7 +25,6 @@ class TitleSubtitleView: UIView {
 		label.textAlignment = .left
 		label.textColor = UIColor.black
 		label.font = UIFont.boldSystemFont(ofSize: 15)
-		label.adjustsFontSizeToFitWidth = true
 		label.numberOfLines = 1
 		return label
 	}()
@@ -36,7 +35,6 @@ class TitleSubtitleView: UIView {
 		label.textAlignment = .left
 		label.textColor = UIColor.lightGray
 		label.font = UIFont.systemFont(ofSize: 15)
-		label.adjustsFontSizeToFitWidth = true
 		label.numberOfLines = 1
 		return label
 	}()
@@ -48,6 +46,7 @@ class TitleSubtitleView: UIView {
 		
 		configureSubviews()
 		configureConstraints()
+		configureAdditional()
 	}
 	
 	required init?(coder: NSCoder) {
@@ -68,11 +67,11 @@ class TitleSubtitleView: UIView {
 			stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
 			stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
 			stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
-			
-			titleLabel.leadingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: 5),
-			
-			subtitleLabel.leadingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: 5),
 		])
+	}
+	
+	private func configureAdditional() {
+		self.backgroundColor = .white
 	}
 	
 	func configure(with viewModel: TitleSubtitleViewModel) {
