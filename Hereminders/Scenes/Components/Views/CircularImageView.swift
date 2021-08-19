@@ -9,18 +9,12 @@
 import Foundation
 import UIKit
 
-class CircularImageView: UIView {
+final class CircularImageView: UIView {
   // MARK: Lifecycle
 
   override init(frame: CGRect) {
-    self.avatarImagem = UIImage(named: "no-image")!
     super.init(frame: .zero)
-  }
-
-  convenience init(withName image: String) {
-    self.init()
-    self.avatarImagem = UIImage(named: image) ?? UIImage()
-    configureUI()
+    configureSubviews()
     configureConstrains()
   }
 
@@ -28,20 +22,23 @@ class CircularImageView: UIView {
     fatalError("init(coder:) has not been implemented")
   }
 
+  // MARK: Internal
+
+  func configure(with viewModel: CircularImageViewModel) {
+    circularImageView.image = viewModel.image
+  }
+
   // MARK: Private
 
   private let circularImageView: UIImageView = {
-    let imagemView = UIImageView()
-    imagemView.layer.cornerRadius = 24
-    imagemView.layer.masksToBounds = true
-    imagemView.translatesAutoresizingMaskIntoConstraints = false
-    return imagemView
+    let imageView = UIImageView()
+    imageView.layer.cornerRadius = 24
+    imageView.layer.masksToBounds = true
+    imageView.translatesAutoresizingMaskIntoConstraints = false
+    return imageView
   }()
 
-  private var avatarImagem: UIImage
-
-  private func configureUI() {
-    circularImageView.image = avatarImagem
+  private func configureSubviews() {
     addSubview(circularImageView)
   }
 

@@ -6,4 +6,16 @@
 //  Copyright © 2021 Rodrigo Borges. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+struct CircularImageViewModel {
+  // MARK: Lifecycle
+
+  init(with image: Image?) {
+    self.image = image ?? Image(named: "no-image")!
+  }
+
+  // MARK: Internal
+
+  let image: Image
+}

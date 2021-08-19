@@ -15,11 +15,26 @@ import XCTest
 
 class CircularImageViewTests: XCTestCase {
   func testImplementandoCircularImageViewUsandoViewCodeCom48px() throws {
+    let circularImage = UIImage(named: "avatar")
+    let circularViewModel = CircularImageViewModel(with: circularImage)
 
-    let circularImage = CircularImageView(withName: "avatar")
+    let circularImageView = CircularImageView()
+    circularImageView.configure(with: circularViewModel)
 
     let snapshopSize = CGSize(width: 48, height: 48)
-    assertSnapshot(matching: circularImage, as: Snapshotting.image(size: snapshopSize))
+    assertSnapshot(matching: circularImageView,
+                   as: Snapshotting.image(size: snapshopSize))
+  }
 
+  func testImplementandoCircularImageViewUsandoViewCodeCom48pxComNomeArquivoInvalido() throws {
+    let circularImage = UIImage(named: "avataraaaaaaaaaaa")
+    let circularViewModel = CircularImageViewModel(with: circularImage)
+
+    let circularImageView = CircularImageView()
+    circularImageView.configure(with: circularViewModel)
+
+    let snapshopSize = CGSize(width: 48, height: 48)
+    assertSnapshot(matching: circularImageView,
+                   as: Snapshotting.image(size: snapshopSize))
   }
 }

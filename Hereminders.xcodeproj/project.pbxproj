@@ -100,6 +100,7 @@
 		98F1C9912066E6EF0008FF57 /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1C98F2066E6EF0008FF57 /* SliderTableViewCell.swift */; };
 		98F1C9922066E6EF0008FF57 /* SliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F1C9902066E6EF0008FF57 /* SliderTableViewCell.xib */; };
 		B19B82A526C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B82A426C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift */; };
+		B19DC97D26CECA3A00FB3FFB /* CircularImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19DC97C26CECA3A00FB3FFB /* CircularImageViewModel.swift */; };
 		B1A51C1B26CCFC31003428B1 /* CircularImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A51C1A26CCFC31003428B1 /* CircularImageViewTests.swift */; };
 		B1A51C1E26CCFF57003428B1 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A51C1D26CCFF57003428B1 /* CircularImageView.swift */; };
 		B1F276EB26C40E0900996346 /* MKCoordinateSpanUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */; };
@@ -252,6 +253,7 @@
 		98F1C98F2066E6EF0008FF57 /* SliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTableViewCell.swift; sourceTree = "<group>"; };
 		98F1C9902066E6EF0008FF57 /* SliderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderTableViewCell.xib; sourceTree = "<group>"; };
 		B19B82A426C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtensionsUnitTests.swift; sourceTree = "<group>"; };
+		B19DC97C26CECA3A00FB3FFB /* CircularImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImageViewModel.swift; sourceTree = "<group>"; };
 		B1A51C1A26CCFC31003428B1 /* CircularImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImageViewTests.swift; sourceTree = "<group>"; };
 		B1A51C1D26CCFF57003428B1 /* CircularImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
 		B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateSpanUnitTests.swift; sourceTree = "<group>"; };
@@ -690,6 +692,7 @@
 			isa = PBXGroup;
 			children = (
 				B1A51C1D26CCFF57003428B1 /* CircularImageView.swift */,
+				B19DC97C26CECA3A00FB3FFB /* CircularImageViewModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1009,6 +1012,7 @@
 				988082CA20C1F31900B4E660 /* HomeViewModel.swift in Sources */,
 				98DD30832068203300AA7E75 /* Place.swift in Sources */,
 				9871B417214483460050C651 /* AppDelegate+ThemeConfiguration.swift in Sources */,
+				B19DC97D26CECA3A00FB3FFB /* CircularImageViewModel.swift in Sources */,
 				983341C820DC53AD006011CF /* PlaceSearchViewController.swift in Sources */,
 				9871B41221447B0A0050C651 /* PlaceDataController.swift in Sources */,
 				9877BBF420F1B009001D2688 /* SettingsCoordinator.swift in Sources */,
