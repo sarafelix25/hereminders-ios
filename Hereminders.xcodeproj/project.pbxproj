@@ -101,6 +101,7 @@
 		98F1C9922066E6EF0008FF57 /* SliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F1C9902066E6EF0008FF57 /* SliderTableViewCell.xib */; };
 		B19B82A526C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B82A426C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift */; };
 		B1F276EB26C40E0900996346 /* MKCoordinateSpanUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */; };
+		BC0E487326CEA4870091BC6C /* SegmentedControlViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E487226CEA4870091BC6C /* SegmentedControlViewViewModel.swift */; };
 		BC51A83F26C471B60022780E /* UITableViewCellUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */; };
 		BC64D57226CDD05C00FAD029 /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC64D57126CDD05C00FAD029 /* SegmentedControlView.swift */; };
 		BC64D57526CDD50C00FAD029 /* SegmentedControlViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC64D57426CDD50C00FAD029 /* SegmentedControlViewTests.swift */; };
@@ -254,6 +255,7 @@
 		98F1C9902066E6EF0008FF57 /* SliderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderTableViewCell.xib; sourceTree = "<group>"; };
 		B19B82A426C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtensionsUnitTests.swift; sourceTree = "<group>"; };
 		B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateSpanUnitTests.swift; sourceTree = "<group>"; };
+		BC0E487226CEA4870091BC6C /* SegmentedControlViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlViewViewModel.swift; sourceTree = "<group>"; };
 		BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellUnitTests.swift; sourceTree = "<group>"; };
 		BC64D57126CDD05C00FAD029 /* SegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlView.swift; sourceTree = "<group>"; };
 		BC64D57426CDD50C00FAD029 /* SegmentedControlViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlViewTests.swift; sourceTree = "<group>"; };
@@ -696,6 +698,7 @@
 			isa = PBXGroup;
 			children = (
 				BC64D57126CDD05C00FAD029 /* SegmentedControlView.swift */,
+				BC0E487226CEA4870091BC6C /* SegmentedControlViewViewModel.swift */,
 			);
 			path = SegmentedControlView;
 			sourceTree = "<group>";
@@ -1036,6 +1039,7 @@
 				98DCD2B920E1C4C900A49897 /* ReminderListView.swift in Sources */,
 				9897154320F3B5FA00F976FE /* ImagesConstants.generated.swift in Sources */,
 				98F1C9892066E4570008FF57 /* UITableViewCell+Extensions.swift in Sources */,
+				BC0E487326CEA4870091BC6C /* SegmentedControlViewViewModel.swift in Sources */,
 				9897153820F397F300F976FE /* PlaceDetailsViewController.swift in Sources */,
 				98F1C9842066E33F0008FF57 /* TextInputTableViewCell.swift in Sources */,
 				987AD731213E1FCB002F3D26 /* NotificationName+Extensions.swift in Sources */,

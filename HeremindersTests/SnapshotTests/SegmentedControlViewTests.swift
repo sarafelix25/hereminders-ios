@@ -13,10 +13,14 @@ import SnapshotTesting
 class SegmentedControlViewTests: XCTestCase {
 	
 	func testSegmentedControlView() {
-		let frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 62)
-		let segmented = SegmentedControlView(frame: frame)
+		let frame = CGRect(x: 0, y: 0, width: 375, height: 62)
+		let segmentedView = SegmentedControlView(frame: frame)
+		let names = ["Ao chegar", "Ao sair"]
+		let viewModel = SegmentedControlViewViewModel(namesSegment: names, initialIndex: 0)
 		
-		assertSnapshot(matching: segmented, as: .image, record: false)
+		segmentedView.configure(with: viewModel)
+
+		assertSnapshot(matching: segmentedView, as: .image, record: false)
 	}
 	
 }

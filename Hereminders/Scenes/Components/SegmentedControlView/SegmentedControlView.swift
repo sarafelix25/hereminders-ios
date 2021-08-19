@@ -15,9 +15,11 @@ class SegmentedControlView: UIView {
 		let segmented = UISegmentedControl(frame: .zero)
 		segmented.translatesAutoresizingMaskIntoConstraints = false
 		segmented.selectedSegmentTintColor = UIColor.heremindersBlue
-		segmented.insertSegment(withTitle: L10n.Reminder.onEntry, at: 0, animated: false)
-		segmented.insertSegment(withTitle: L10n.Reminder.onExit, at: 1, animated: false)
-		segmented.selectedSegmentIndex = 0
+		segmented.backgroundColor = UIColor.white
+		UISegmentedControl.appearance()
+			.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .selected)
+		UISegmentedControl.appearance()
+			.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.heremindersBlue], for: .normal)
 		return segmented
 	}()
 	
@@ -52,6 +54,13 @@ class SegmentedControlView: UIView {
 	
 	private func configureAdditional() {
 		backgroundColor = .white
+	}
+	
+	func configure(with viewModel: SegmentedControlViewViewModel){
+		for (index, name) in viewModel.namesSegment.enumerated() {
+			segmentedControl.insertSegment(withTitle: name, at: index, animated: false)
+		}
+		segmentedControl.selectedSegmentIndex = viewModel.initialIndex
 	}
 	
 }
