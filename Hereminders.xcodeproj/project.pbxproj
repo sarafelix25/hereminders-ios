@@ -105,6 +105,9 @@
 		B19B82A526C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B82A426C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift */; };
 		B1F276EB26C40E0900996346 /* MKCoordinateSpanUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */; };
 		BC51A83F26C471B60022780E /* UITableViewCellUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */; };
+		BCA85B4526CFF550005D6843 /* TitleSubtitleSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA85B4426CFF54F005D6843 /* TitleSubtitleSnapshotTests.swift */; };
+		BCA85B4926CFF651005D6843 /* TitleSubtitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA85B4726CFF651005D6843 /* TitleSubtitleView.swift */; };
+		BCA85B4A26CFF651005D6843 /* TitleSubtitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA85B4826CFF651005D6843 /* TitleSubtitleViewModel.swift */; };
 		DE04FA2E26C45B7900D8D498 /* UIColorUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE04FA2D26C45B7900D8D498 /* UIColorUnitTests.swift */; };
 		DE1E78F726C41B1F002A4CBA /* StringUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E78F626C41B1F002A4CBA /* StringUnitTests.swift */; };
 		ED1D082026C5BD74001CA0EE /* AnnotationUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D081F26C5BD74001CA0EE /* AnnotationUnitTest.swift */; };
@@ -259,6 +262,9 @@
 		B19B82A426C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtensionsUnitTests.swift; sourceTree = "<group>"; };
 		B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateSpanUnitTests.swift; sourceTree = "<group>"; };
 		BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellUnitTests.swift; sourceTree = "<group>"; };
+		BCA85B4426CFF54F005D6843 /* TitleSubtitleSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TitleSubtitleSnapshotTests.swift; path = HeremindersTests/TitleSubtitleSnapshotTests.swift; sourceTree = SOURCE_ROOT; };
+		BCA85B4726CFF651005D6843 /* TitleSubtitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSubtitleView.swift; sourceTree = "<group>"; };
+		BCA85B4826CFF651005D6843 /* TitleSubtitleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSubtitleViewModel.swift; sourceTree = "<group>"; };
 		CCD8DDA0503BF862CCFD8674 /* Pods-Hereminders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hereminders.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hereminders/Pods-Hereminders.debug.xcconfig"; sourceTree = "<group>"; };
 		D39A76E2613F27BF979AD07F /* Pods-Hereminders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hereminders.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hereminders/Pods-Hereminders.release.xcconfig"; sourceTree = "<group>"; };
 		D5E098537E96CE7E62A81278 /* Pods-HeremindersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeremindersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeremindersTests/Pods-HeremindersTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -497,6 +503,7 @@
 		988E0B3026CB1F5A008BBBCF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				BCA85B4626CFF651005D6843 /* TitleSubTitleView */,
 				988E0B3826CB2DE7008BBBCF /* EmptyView */,
 			);
 			path = Components;
@@ -505,6 +512,7 @@
 		988E0B3326CB24EF008BBBCF /* SnapshotTests */ = {
 			isa = PBXGroup;
 			children = (
+				BCA85B4426CFF54F005D6843 /* TitleSubtitleSnapshotTests.swift */,
 				988E0B3426CB2509008BBBCF /* EmptyViewSnapshotTests.swift */,
 			);
 			path = SnapshotTests;
@@ -710,6 +718,16 @@
 			);
 			path = SliderCell;
 			sourceTree = "<group>";
+		};
+		BCA85B4626CFF651005D6843 /* TitleSubTitleView */ = {
+			isa = PBXGroup;
+			children = (
+				BCA85B4726CFF651005D6843 /* TitleSubtitleView.swift */,
+				BCA85B4826CFF651005D6843 /* TitleSubtitleViewModel.swift */,
+			);
+			name = TitleSubTitleView;
+			path = Hereminders/Scenes/TitleSubTitleView;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -1025,6 +1043,7 @@
 				989BAB0720F41BC300C82DF7 /* UIColor+Extensions.swift in Sources */,
 				98DCD2C020E82BD500A49897 /* MKPlacemark+Extensions.swift in Sources */,
 				9897154420F3B5FA00F976FE /* Localized.generated.swift in Sources */,
+				BCA85B4A26CFF651005D6843 /* TitleSubtitleViewModel.swift in Sources */,
 				9871B4192144836A0050C651 /* AppDelegate+NotificationsConfiguration.swift in Sources */,
 				986B9C7F2140CF5000A1D103 /* Bundle+Extensions.swift in Sources */,
 				9877BBF120F1ADA1001D2688 /* SettingsViewController.swift in Sources */,
@@ -1042,6 +1061,7 @@
 				98F1C9892066E4570008FF57 /* UITableViewCell+Extensions.swift in Sources */,
 				9897153820F397F300F976FE /* PlaceDetailsViewController.swift in Sources */,
 				98F1C9842066E33F0008FF57 /* TextInputTableViewCell.swift in Sources */,
+				BCA85B4926CFF651005D6843 /* TitleSubtitleView.swift in Sources */,
 				987AD731213E1FCB002F3D26 /* NotificationName+Extensions.swift in Sources */,
 				987AD733213F4537002F3D26 /* UIBarButtonItem+Extensions.swift in Sources */,
 				983341CB20DC561B006011CF /* PlaceSearchCoordinator.swift in Sources */,
@@ -1060,6 +1080,7 @@
 				B19B82A526C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift in Sources */,
 				988E0B3526CB2509008BBBCF /* EmptyViewSnapshotTests.swift in Sources */,
 				BC51A83F26C471B60022780E /* UITableViewCellUnitTests.swift in Sources */,
+				BCA85B4526CFF550005D6843 /* TitleSubtitleSnapshotTests.swift in Sources */,
 				B1F276EB26C40E0900996346 /* MKCoordinateSpanUnitTests.swift in Sources */,
 				DE1E78F726C41B1F002A4CBA /* StringUnitTests.swift in Sources */,
 				9811F20F26C3358E005F71E3 /* UIViewControllerUnitTests.swift in Sources */,
