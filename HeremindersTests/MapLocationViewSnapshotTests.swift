@@ -15,6 +15,6 @@ class MapLocationViewSnapshotTests: XCTestCase {
     func testMapLocationView() {
         let mapLocationView = MapLocationView()
 
-        assertSnapshot(matching: mapLocationView, as:Snapshotting.image(size: CGSize(width: 150, height: 150)), record: true)
+        assertSnapshot(matching: mapLocationView, as:Snapshotting.image(size: CGSize(width: 150, height: 150)))
     }
 }
