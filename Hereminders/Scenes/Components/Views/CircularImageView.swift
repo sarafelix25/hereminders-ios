@@ -12,7 +12,7 @@ import UIKit
 final class CircularImageView: UIView {
   // MARK: Lifecycle
 
-  override init(frame: CGRect) {
+   init() {
     super.init(frame: .zero)
     configureSubviews()
     configureConstrains()
