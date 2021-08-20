@@ -99,12 +99,15 @@
 		98F1C98D2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1C98C2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift */; };
 		98F1C9912066E6EF0008FF57 /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1C98F2066E6EF0008FF57 /* SliderTableViewCell.swift */; };
 		98F1C9922066E6EF0008FF57 /* SliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F1C9902066E6EF0008FF57 /* SliderTableViewCell.xib */; };
-		ED1D082026C5BD74001CA0EE /* AnnotationUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D081F26C5BD74001CA0EE /* AnnotationUnitTest.swift */; };
-		DE04FA2E26C45B7900D8D498 /* UIColorUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE04FA2D26C45B7900D8D498 /* UIColorUnitTests.swift */; };
 		B19B82A526C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B82A426C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift */; };
 		B1F276EB26C40E0900996346 /* MKCoordinateSpanUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */; };
 		BC51A83F26C471B60022780E /* UITableViewCellUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */; };
+		DE04FA2E26C45B7900D8D498 /* UIColorUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE04FA2D26C45B7900D8D498 /* UIColorUnitTests.swift */; };
 		DE1E78F726C41B1F002A4CBA /* StringUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E78F626C41B1F002A4CBA /* StringUnitTests.swift */; };
+		ED1D082026C5BD74001CA0EE /* AnnotationUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D081F26C5BD74001CA0EE /* AnnotationUnitTest.swift */; };
+		ED99541326CF3A6900A54FF2 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED99541226CF3A6900A54FF2 /* ButtonView.swift */; };
+		ED99541C26CF430200A54FF2 /* ButtonViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED99541B26CF430200A54FF2 /* ButtonViewSnapshotTests.swift */; };
+		EDEEE22426D032F800090FF8 /* ButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEEE22326D032F700090FF8 /* ButtonViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -256,9 +259,12 @@
 		CCD8DDA0503BF862CCFD8674 /* Pods-Hereminders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hereminders.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hereminders/Pods-Hereminders.debug.xcconfig"; sourceTree = "<group>"; };
 		D39A76E2613F27BF979AD07F /* Pods-Hereminders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hereminders.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hereminders/Pods-Hereminders.release.xcconfig"; sourceTree = "<group>"; };
 		D5E098537E96CE7E62A81278 /* Pods-HeremindersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeremindersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeremindersTests/Pods-HeremindersTests.release.xcconfig"; sourceTree = "<group>"; };
-		ED1D081F26C5BD74001CA0EE /* AnnotationUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationUnitTest.swift; sourceTree = "<group>"; };
 		DE04FA2D26C45B7900D8D498 /* UIColorUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorUnitTests.swift; sourceTree = "<group>"; };
 		DE1E78F626C41B1F002A4CBA /* StringUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUnitTests.swift; sourceTree = "<group>"; };
+		ED1D081F26C5BD74001CA0EE /* AnnotationUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationUnitTest.swift; sourceTree = "<group>"; };
+		ED99541226CF3A6900A54FF2 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		ED99541B26CF430200A54FF2 /* ButtonViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewSnapshotTests.swift; sourceTree = "<group>"; };
+		EDEEE22326D032F700090FF8 /* ButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewModel.swift; sourceTree = "<group>"; };
 		F1E294923822D767E0E2F371 /* Pods_HeremindersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeremindersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEEA0847B9554E1F3C321E20 /* Pods-HeremindersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeremindersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeremindersUITests/Pods-HeremindersUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -358,6 +364,7 @@
 		9804F6C32066D79300820153 /* HeremindersTests */ = {
 			isa = PBXGroup;
 			children = (
+				ED99541A26CF42AB00A54FF2 /* SnapshotTests */,
 				9804F6C62066D79300820153 /* Info.plist */,
 				ED1D081F26C5BD74001CA0EE /* AnnotationUnitTest.swift */,
 				DE04FA2D26C45B7900D8D498 /* UIColorUnitTests.swift */,
@@ -417,6 +424,7 @@
 		9804F6E02066D87900820153 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				ED99541126CF3A2800A54FF2 /* Components */,
 				9804F6E42066DAA400820153 /* Home */,
 				98F1C97A2066DFA90008FF57 /* NewReminder */,
 				983341C520DC5374006011CF /* PlaceSearch */,
@@ -676,6 +684,23 @@
 				98F1C9902066E6EF0008FF57 /* SliderTableViewCell.xib */,
 			);
 			path = SliderCell;
+			sourceTree = "<group>";
+		};
+		ED99541126CF3A2800A54FF2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				ED99541226CF3A6900A54FF2 /* ButtonView.swift */,
+				EDEEE22326D032F700090FF8 /* ButtonViewModel.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		ED99541A26CF42AB00A54FF2 /* SnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED99541B26CF430200A54FF2 /* ButtonViewSnapshotTests.swift */,
+			);
+			path = SnapshotTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -959,6 +984,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9877BBEA20F1A824001D2688 /* PlaceListViewController.swift in Sources */,
+				EDEEE22426D032F800090FF8 /* ButtonViewModel.swift in Sources */,
 				98F1C98D2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift in Sources */,
 				98F1C9912066E6EF0008FF57 /* SliderTableViewCell.swift in Sources */,
 				98F1C9872066E4420008FF57 /* UITableView+Extensions.swift in Sources */,
@@ -966,6 +992,7 @@
 				98DCD2B220DEB8E700A49897 /* MKCoordinateSpan+Extensions.swift in Sources */,
 				989902C620FD856800865079 /* PremiumViewController.swift in Sources */,
 				9804F6E72066DAC900820153 /* HomeViewController.swift in Sources */,
+				ED99541326CF3A6900A54FF2 /* ButtonView.swift in Sources */,
 				9807EB3220C9ECD100B5F7DA /* HomeViewController+MKMapViewDelegate.swift in Sources */,
 				9897153B20F39A1E00F976FE /* PlaceDetailsCoordinator.swift in Sources */,
 				9804F6E32066D90A00820153 /* DataController.swift in Sources */,
@@ -1018,6 +1045,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED99541C26CF430200A54FF2 /* ButtonViewSnapshotTests.swift in Sources */,
 				133D727C26C6E1150065ECB5 /* MKPlaceMarkExtensionsUnitTest.swift in Sources */,
 				ED1D082026C5BD74001CA0EE /* AnnotationUnitTest.swift in Sources */,
 				DE04FA2E26C45B7900D8D498 /* UIColorUnitTests.swift in Sources */,
