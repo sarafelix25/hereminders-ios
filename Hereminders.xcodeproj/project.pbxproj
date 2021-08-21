@@ -383,16 +383,16 @@
 			isa = PBXGroup;
 			children = (
 				988E0B3326CB24EF008BBBCF /* SnapshotTests */,
-				9804F6C62066D79300820153 /* Info.plist */,
 				ED1D081F26C5BD74001CA0EE /* AnnotationUnitTest.swift */,
-				DE04FA2D26C45B7900D8D498 /* UIColorUnitTests.swift */,
-				1349ADC026C5411100981469 /* UnitTestStructPlaceResult.swift */,
-				B19B82A426C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift */,
-				BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */,
 				B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */,
-				DE1E78F626C41B1F002A4CBA /* StringUnitTests.swift */,
-				9811F20E26C3358E005F71E3 /* UIViewControllerUnitTests.swift */,
 				133D727B26C6E1150065ECB5 /* MKPlaceMarkExtensionsUnitTest.swift */,
+				B19B82A426C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift */,
+				DE1E78F626C41B1F002A4CBA /* StringUnitTests.swift */,
+				DE04FA2D26C45B7900D8D498 /* UIColorUnitTests.swift */,
+				BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */,
+				9811F20E26C3358E005F71E3 /* UIViewControllerUnitTests.swift */,
+				1349ADC026C5411100981469 /* UnitTestStructPlaceResult.swift */,
+				9804F6C62066D79300820153 /* Info.plist */,
 			);
 			path = HeremindersTests;
 			sourceTree = "<group>";
