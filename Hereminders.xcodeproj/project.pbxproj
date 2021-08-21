@@ -103,6 +103,9 @@
 		98F1C9912066E6EF0008FF57 /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1C98F2066E6EF0008FF57 /* SliderTableViewCell.swift */; };
 		98F1C9922066E6EF0008FF57 /* SliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F1C9902066E6EF0008FF57 /* SliderTableViewCell.xib */; };
 		B19B82A526C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B82A426C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift */; };
+		B1C3EB3D26D15AB100EB214C /* CircularImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C3EB3C26D15AB100EB214C /* CircularImageViewTests.swift */; };
+		B1C3EB4526D15B1600EB214C /* CircularImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C3EB4326D15B1600EB214C /* CircularImageViewModel.swift */; };
+		B1C3EB4626D15B1600EB214C /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C3EB4426D15B1600EB214C /* CircularImageView.swift */; };
 		B1F276EB26C40E0900996346 /* MKCoordinateSpanUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */; };
 		BC51A83F26C471B60022780E /* UITableViewCellUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */; };
 		BCA85B4526CFF550005D6843 /* TitleSubtitleSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA85B4426CFF54F005D6843 /* TitleSubtitleSnapshotTests.swift */; };
@@ -263,6 +266,9 @@
 		98F1C98F2066E6EF0008FF57 /* SliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTableViewCell.swift; sourceTree = "<group>"; };
 		98F1C9902066E6EF0008FF57 /* SliderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderTableViewCell.xib; sourceTree = "<group>"; };
 		B19B82A426C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtensionsUnitTests.swift; sourceTree = "<group>"; };
+		B1C3EB3C26D15AB100EB214C /* CircularImageViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageViewTests.swift; sourceTree = "<group>"; };
+		B1C3EB4326D15B1600EB214C /* CircularImageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageViewModel.swift; sourceTree = "<group>"; };
+		B1C3EB4426D15B1600EB214C /* CircularImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
 		B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateSpanUnitTests.swift; sourceTree = "<group>"; };
 		BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellUnitTests.swift; sourceTree = "<group>"; };
 		BCA85B4426CFF54F005D6843 /* TitleSubtitleSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TitleSubtitleSnapshotTests.swift; path = HeremindersTests/TitleSubtitleSnapshotTests.swift; sourceTree = SOURCE_ROOT; };
@@ -509,9 +515,10 @@
 		988E0B3026CB1F5A008BBBCF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B1C3EB3E26D15AEA00EB214C /* CircularImageView */,
+				988E0B3826CB2DE7008BBBCF /* EmptyView */,
 				BCC5A11026D0246200A7F3B4 /* SegmentedControlView */,
 				BCA85B4626CFF651005D6843 /* TitleSubTitleView */,
-				988E0B3826CB2DE7008BBBCF /* EmptyView */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -519,9 +526,10 @@
 		988E0B3326CB24EF008BBBCF /* SnapshotTests */ = {
 			isa = PBXGroup;
 			children = (
+				B1C3EB3C26D15AB100EB214C /* CircularImageViewTests.swift */,
+				988E0B3426CB2509008BBBCF /* EmptyViewSnapshotTests.swift */,
 				BCC5A10E26D0244300A7F3B4 /* SegmentedControlViewTests.swift */,
 				BCA85B4426CFF54F005D6843 /* TitleSubtitleSnapshotTests.swift */,
-				988E0B3426CB2509008BBBCF /* EmptyViewSnapshotTests.swift */,
 			);
 			path = SnapshotTests;
 			sourceTree = "<group>";
@@ -725,6 +733,15 @@
 				98F1C9902066E6EF0008FF57 /* SliderTableViewCell.xib */,
 			);
 			path = SliderCell;
+			sourceTree = "<group>";
+		};
+		B1C3EB3E26D15AEA00EB214C /* CircularImageView */ = {
+			isa = PBXGroup;
+			children = (
+				B1C3EB4426D15B1600EB214C /* CircularImageView.swift */,
+				B1C3EB4326D15B1600EB214C /* CircularImageViewModel.swift */,
+			);
+			path = CircularImageView;
 			sourceTree = "<group>";
 		};
 		BCA85B4626CFF651005D6843 /* TitleSubTitleView */ = {
@@ -1041,6 +1058,7 @@
 				9804F6E32066D90A00820153 /* DataController.swift in Sources */,
 				9804F6AD2066D79300820153 /* AppDelegate.swift in Sources */,
 				988082CA20C1F31900B4E660 /* HomeViewModel.swift in Sources */,
+				B1C3EB4526D15B1600EB214C /* CircularImageViewModel.swift in Sources */,
 				98DD30832068203300AA7E75 /* Place.swift in Sources */,
 				9871B417214483460050C651 /* AppDelegate+ThemeConfiguration.swift in Sources */,
 				983341C820DC53AD006011CF /* PlaceSearchViewController.swift in Sources */,
@@ -1055,6 +1073,7 @@
 				98DCD2BB20E5B52200A49897 /* Annotation.swift in Sources */,
 				9897153420F2D16400F976FE /* PlaceListViewModel.swift in Sources */,
 				98DD30812068203300AA7E75 /* Reminder.swift in Sources */,
+				B1C3EB4626D15B1600EB214C /* CircularImageView.swift in Sources */,
 				9871B41421447DEF0050C651 /* ReminderDataController.swift in Sources */,
 				9804F6EA2066DBB400820153 /* UIViewController+Extensions.swift in Sources */,
 				98D02AC820673F0700E8BC91 /* SegmentedControlTableViewCell.swift in Sources */,
@@ -1104,6 +1123,7 @@
 				BCC5A10F26D0244300A7F3B4 /* SegmentedControlViewTests.swift in Sources */,
 				DE1E78F726C41B1F002A4CBA /* StringUnitTests.swift in Sources */,
 				9811F20F26C3358E005F71E3 /* UIViewControllerUnitTests.swift in Sources */,
+				B1C3EB3D26D15AB100EB214C /* CircularImageViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
