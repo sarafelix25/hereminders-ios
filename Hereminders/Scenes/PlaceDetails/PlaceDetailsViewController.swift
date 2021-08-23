@@ -11,7 +11,8 @@ import UIKit
 final class PlaceDetailsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var mapHeaderView: MapHeaderView!
+
+    @IBOutlet weak var mapLocationView: MapLocationView!
 
     let place: Place
 
@@ -38,7 +39,7 @@ final class PlaceDetailsViewController: UIViewController {
 
         self.configureNavigationBar()
         self.configureTableView()
-        self.configureMapHeaderView()
+        self.configureMapLocationView()
     }
 
     private func configureNavigationBar() {
@@ -55,13 +56,10 @@ final class PlaceDetailsViewController: UIViewController {
         self.tableView.dataSource = self
     }
 
-    private func configureMapHeaderView() {
+    private func configureMapLocationView() {
 
-        var viewModel = MapHeaderViewModel()
-        viewModel.placeName = self.place.name
-        viewModel.placeCoordinate = self.place.coordinate
-
-        self.mapHeaderView.render(with: viewModel)
+        let viewModel = MapLocationViewModel(coordinate: self.place.coordinate, title: self.place.name)
+        self.mapLocationView.configure(with: viewModel)
     }
 }
 
@@ -129,7 +127,7 @@ extension PlaceDetailsViewController: TextInputCellDelegate {
 
             self.place.name = text
             self.dataController.saveContext()
-            self.configureMapHeaderView()
+            self.configureMapLocationView()
             NotificationCenter.default.post(name: .editPlace, object: self.place)
         }
     }
