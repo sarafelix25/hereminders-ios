@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+@testable import Hereminders
 
 final class DividerView: UIView {
     

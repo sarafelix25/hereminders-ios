@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1319E06D26D4349400AA64CE /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1319E06C26D4349400AA64CE /* DividerView.swift */; };
 		133D727C26C6E1150065ECB5 /* MKPlaceMarkExtensionsUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133D727B26C6E1150065ECB5 /* MKPlaceMarkExtensionsUnitTest.swift */; };
 		1349ADC126C5411100981469 /* UnitTestStructPlaceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349ADC026C5411100981469 /* UnitTestStructPlaceResult.swift */; };
 		13DB8EFD26D42AF000CB86EA /* DividerViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DB8EFC26D42AF000CB86EA /* DividerViewSnapshotTests.swift */; };
@@ -165,6 +166,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1319E06C26D4349400AA64CE /* DividerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DividerView.swift; path = DividerView/DividerView.swift; sourceTree = "<group>"; };
 		133D727B26C6E1150065ECB5 /* MKPlaceMarkExtensionsUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKPlaceMarkExtensionsUnitTest.swift; sourceTree = "<group>"; };
 		1349ADC026C5411100981469 /* UnitTestStructPlaceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestStructPlaceResult.swift; sourceTree = "<group>"; };
 		13DB8EFC26D42AF000CB86EA /* DividerViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividerViewSnapshotTests.swift; sourceTree = "<group>"; };
@@ -523,6 +525,7 @@
 		988E0B3026CB1F5A008BBBCF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1319E06C26D4349400AA64CE /* DividerView.swift */,
 				DEBEC9D726D3E50500D92DB5 /* MapLocationView */,
 				B1C3EB3E26D15AEA00EB214C /* CircularImageView */,
 				988E0B3826CB2DE7008BBBCF /* EmptyView */,
@@ -1078,6 +1081,7 @@
 				988E0B3226CB1F7B008BBBCF /* EmptyView.swift in Sources */,
 				9804F6E32066D90A00820153 /* DataController.swift in Sources */,
 				9804F6AD2066D79300820153 /* AppDelegate.swift in Sources */,
+				1319E06D26D4349400AA64CE /* DividerView.swift in Sources */,
 				988082CA20C1F31900B4E660 /* HomeViewModel.swift in Sources */,
 				B1C3EB4526D15B1600EB214C /* CircularImageViewModel.swift in Sources */,
 				98DD30832068203300AA7E75 /* Place.swift in Sources */,
