@@ -122,6 +122,9 @@
 		DEBEC9DA26D3E50500D92DB5 /* MapLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEC9D826D3E50500D92DB5 /* MapLocationView.swift */; };
 		DEBEC9DB26D3E50500D92DB5 /* MapLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEC9D926D3E50500D92DB5 /* MapLocationViewModel.swift */; };
 		ED1D082026C5BD74001CA0EE /* AnnotationUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D081F26C5BD74001CA0EE /* AnnotationUnitTest.swift */; };
+		EDAA813A26D44B8B00816933 /* ButtonViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA813926D44B8B00816933 /* ButtonViewSnapshotTests.swift */; };
+		EDAA814326D44BBC00816933 /* ButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA814126D44BBC00816933 /* ButtonViewModel.swift */; };
+		EDAA814426D44BBC00816933 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA814226D44BBC00816933 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -293,6 +296,9 @@
 		DEBEC9D826D3E50500D92DB5 /* MapLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationView.swift; sourceTree = "<group>"; };
 		DEBEC9D926D3E50500D92DB5 /* MapLocationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationViewModel.swift; sourceTree = "<group>"; };
 		ED1D081F26C5BD74001CA0EE /* AnnotationUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationUnitTest.swift; sourceTree = "<group>"; };
+		EDAA813926D44B8B00816933 /* ButtonViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewSnapshotTests.swift; sourceTree = "<group>"; };
+		EDAA814126D44BBC00816933 /* ButtonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewModel.swift; sourceTree = "<group>"; };
+		EDAA814226D44BBC00816933 /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		F1E294923822D767E0E2F371 /* Pods_HeremindersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeremindersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEEA0847B9554E1F3C321E20 /* Pods-HeremindersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeremindersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeremindersUITests/Pods-HeremindersUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -525,6 +531,7 @@
 		988E0B3026CB1F5A008BBBCF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				EDAA814B26D44BE900816933 /* ButtonView */,
 				1319E06C26D4349400AA64CE /* DividerView.swift */,
 				DEBEC9D726D3E50500D92DB5 /* MapLocationView */,
 				B1C3EB3E26D15AEA00EB214C /* CircularImageView */,
@@ -538,6 +545,7 @@
 		988E0B3326CB24EF008BBBCF /* SnapshotTests */ = {
 			isa = PBXGroup;
 			children = (
+				EDAA813926D44B8B00816933 /* ButtonViewSnapshotTests.swift */,
 				13DB8EFC26D42AF000CB86EA /* DividerViewSnapshotTests.swift */,
 				DEBEC9D526D3E4CA00D92DB5 /* MapLocationViewSnapshotTests.swift */,
 				B1C3EB3C26D15AB100EB214C /* CircularImageViewTests.swift */,
@@ -786,6 +794,15 @@
 			name = MapLocationView;
 			path = Hereminders/Scenes/MapLocationView;
 			sourceTree = SOURCE_ROOT;
+		};
+		EDAA814B26D44BE900816933 /* ButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				EDAA814226D44BBC00816933 /* ButtonView.swift */,
+				EDAA814126D44BBC00816933 /* ButtonViewModel.swift */,
+			);
+			path = ButtonView;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -1084,6 +1101,7 @@
 				1319E06D26D4349400AA64CE /* DividerView.swift in Sources */,
 				988082CA20C1F31900B4E660 /* HomeViewModel.swift in Sources */,
 				B1C3EB4526D15B1600EB214C /* CircularImageViewModel.swift in Sources */,
+				EDAA814326D44BBC00816933 /* ButtonViewModel.swift in Sources */,
 				98DD30832068203300AA7E75 /* Place.swift in Sources */,
 				9871B417214483460050C651 /* AppDelegate+ThemeConfiguration.swift in Sources */,
 				983341C820DC53AD006011CF /* PlaceSearchViewController.swift in Sources */,
@@ -1102,6 +1120,7 @@
 				9871B41421447DEF0050C651 /* ReminderDataController.swift in Sources */,
 				9804F6EA2066DBB400820153 /* UIViewController+Extensions.swift in Sources */,
 				98D02AC820673F0700E8BC91 /* SegmentedControlTableViewCell.swift in Sources */,
+				EDAA814426D44BBC00816933 /* ButtonView.swift in Sources */,
 				989BAB0720F41BC300C82DF7 /* UIColor+Extensions.swift in Sources */,
 				98DCD2C020E82BD500A49897 /* MKPlacemark+Extensions.swift in Sources */,
 				9897154420F3B5FA00F976FE /* Localized.generated.swift in Sources */,
@@ -1140,6 +1159,7 @@
 			files = (
 				133D727C26C6E1150065ECB5 /* MKPlaceMarkExtensionsUnitTest.swift in Sources */,
 				ED1D082026C5BD74001CA0EE /* AnnotationUnitTest.swift in Sources */,
+				EDAA813A26D44B8B00816933 /* ButtonViewSnapshotTests.swift in Sources */,
 				DE04FA2E26C45B7900D8D498 /* UIColorUnitTests.swift in Sources */,
 				1349ADC126C5411100981469 /* UnitTestStructPlaceResult.swift in Sources */,
 				B19B82A526C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift in Sources */,
