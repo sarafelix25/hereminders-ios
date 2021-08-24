@@ -23,7 +23,7 @@ class CircularImageViewTests: XCTestCase {
 
     let snapshopSize = CGSize(width: 48, height: 48)
     assertSnapshot(matching: circularImageView,
-                   as: Snapshotting.image(size: snapshopSize))
+                   as: Snapshotting.image(size: snapshopSize), record: false)
   }
 
   func testImplementandoCircularImageViewUsandoViewCodeCom48pxComNomeArquivoInvalido() throws {
@@ -35,6 +35,6 @@ class CircularImageViewTests: XCTestCase {
 
     let snapshopSize = CGSize(width: 48, height: 48)
     assertSnapshot(matching: circularImageView,
-                   as: Snapshotting.image(size: snapshopSize))
+                   as: Snapshotting.image(size: snapshopSize), record: false)
   }
 }
