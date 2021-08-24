@@ -170,7 +170,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1319E06C26D4349400AA64CE /* DividerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DividerView.swift; path = DividerView/DividerView.swift; sourceTree = "<group>"; };
+		1319E06C26D4349400AA64CE /* DividerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		133D727B26C6E1150065ECB5 /* MKPlaceMarkExtensionsUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKPlaceMarkExtensionsUnitTest.swift; sourceTree = "<group>"; };
 		1349ADC026C5411100981469 /* UnitTestStructPlaceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestStructPlaceResult.swift; sourceTree = "<group>"; };
 		13DB8EFC26D42AF000CB86EA /* DividerViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividerViewSnapshotTests.swift; sourceTree = "<group>"; };
@@ -534,7 +534,7 @@
 			isa = PBXGroup;
 			children = (
 				EDAA814B26D44BE900816933 /* ButtonView */,
-				1319E06C26D4349400AA64CE /* DividerView.swift */,
+				BC847BA126D54C9E00373A49 /* Divider */,
 				DEBEC9D726D3E50500D92DB5 /* MapLocationView */,
 				B1C3EB3E26D15AEA00EB214C /* CircularImageView */,
 				988E0B3826CB2DE7008BBBCF /* EmptyView */,
@@ -767,6 +767,14 @@
 				B1C3EB4326D15B1600EB214C /* CircularImageViewModel.swift */,
 			);
 			path = CircularImageView;
+			sourceTree = "<group>";
+		};
+		BC847BA126D54C9E00373A49 /* Divider */ = {
+			isa = PBXGroup;
+			children = (
+				1319E06C26D4349400AA64CE /* DividerView.swift */,
+			);
+			path = Divider;
 			sourceTree = "<group>";
 		};
 		BCA85B4626CFF651005D6843 /* TitleSubTitleView */ = {

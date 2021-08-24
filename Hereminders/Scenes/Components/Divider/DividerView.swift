@@ -8,25 +8,30 @@
 
 import Foundation
 import UIKit
-@testable import Hereminders
 
 final class DividerView: UIView {
     
     init() {
         super.init(frame: .zero)
-        self.configureSubviews()
-        self.configureConstraints()
+		  configureView()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func configureSubviews() {
-        self.backgroundColor = .lightGray
-    }
-    
-    private func configureConstraints() {
-        self.heightAnchor.constraint(equalToConstant: 1.0).isActive = true
-    }
+}
+
+
+// MARK: - Extension ViewProtocol
+extension DividerView: ViewProtocol {
+	
+	func configureSubviews() {
+		self.backgroundColor = .lightGray
+	}
+	
+	func configureConstraints() {
+		self.heightAnchor.constraint(equalToConstant: 1.0).isActive = true
+	}
+	
 }
