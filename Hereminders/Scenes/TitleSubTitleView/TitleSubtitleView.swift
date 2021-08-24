@@ -44,9 +44,8 @@ class TitleSubtitleView: UIView {
 	override init(frame: CGRect = .zero) {
 		super.init(frame: frame)
 		
-		configureSubviews()
-		configureConstraints()
-		configureAdditional()
+		backgroundColor = .white
+		configureView()
 	}
 	
 	required init?(coder: NSCoder) {
@@ -55,28 +54,30 @@ class TitleSubtitleView: UIView {
 	
 	
 	// MARK: - Function
-	private func configureSubviews() {
+	func configure(with viewModel: TitleSubtitleViewModel) {
+		titleLabel.text = viewModel.title
+		subtitleLabel.text = viewModel.subtitle
+	}
+	
+}
+
+
+// MARK: - Extension ViewProtocol
+extension TitleSubtitleView: ViewProtocol {
+	
+	func configureSubviews() {
 		addSubview(stackView)
 		stackView.addArrangedSubview(titleLabel)
 		stackView.addArrangedSubview(subtitleLabel)
 	}
 	
-	private func configureConstraints() {
+	func configureConstraints() {
 		NSLayoutConstraint.activate([
 			stackView.topAnchor.constraint(equalTo: topAnchor),
 			stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
 			stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
 			stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
 		])
-	}
-	
-	private func configureAdditional() {
-		self.backgroundColor = .white
-	}
-	
-	func configure(with viewModel: TitleSubtitleViewModel) {
-		titleLabel.text = viewModel.title
-		subtitleLabel.text = viewModel.subtitle
 	}
 	
 }
