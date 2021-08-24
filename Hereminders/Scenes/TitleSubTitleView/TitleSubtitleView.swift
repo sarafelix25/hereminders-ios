@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TitleSubtitleView: UIView {
+final class TitleSubtitleView: UIView {
 	
 	// MARK: - UI Element
 	private var stackView: UIStackView = {

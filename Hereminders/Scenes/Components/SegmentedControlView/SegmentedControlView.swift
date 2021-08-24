@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SegmentedControlView: UIView {
+final class SegmentedControlView: UIView {
 	
 	// MARK: - UI Element
 	private var segmentedControl: UISegmentedControl = {
