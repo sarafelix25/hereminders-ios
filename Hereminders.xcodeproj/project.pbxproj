@@ -104,6 +104,9 @@
 		98F1C98D2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1C98C2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift */; };
 		98F1C9912066E6EF0008FF57 /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1C98F2066E6EF0008FF57 /* SliderTableViewCell.swift */; };
 		98F1C9922066E6EF0008FF57 /* SliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F1C9902066E6EF0008FF57 /* SliderTableViewCell.xib */; };
+		B178BD2326D457E900820C24 /* ContributorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B178BD2226D457E900820C24 /* ContributorTableViewCell.swift */; };
+		B178BD2526D4584E00820C24 /* ContribuitorTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B178BD2426D4584E00820C24 /* ContribuitorTableViewCellViewModel.swift */; };
+		B178BD2726D45C3900820C24 /* ContributorTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B178BD2626D45C3900820C24 /* ContributorTableViewCellTests.swift */; };
 		B19B82A526C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B82A426C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift */; };
 		B1C3EB3D26D15AB100EB214C /* CircularImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C3EB3C26D15AB100EB214C /* CircularImageViewTests.swift */; };
 		B1C3EB4526D15B1600EB214C /* CircularImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C3EB4326D15B1600EB214C /* CircularImageViewModel.swift */; };
@@ -272,6 +275,9 @@
 		98F1C98C2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
 		98F1C98F2066E6EF0008FF57 /* SliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTableViewCell.swift; sourceTree = "<group>"; };
 		98F1C9902066E6EF0008FF57 /* SliderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderTableViewCell.xib; sourceTree = "<group>"; };
+		B178BD2226D457E900820C24 /* ContributorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorTableViewCell.swift; sourceTree = "<group>"; };
+		B178BD2426D4584E00820C24 /* ContribuitorTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContribuitorTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		B178BD2626D45C3900820C24 /* ContributorTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorTableViewCellTests.swift; sourceTree = "<group>"; };
 		B19B82A426C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtensionsUnitTests.swift; sourceTree = "<group>"; };
 		B1C3EB3C26D15AB100EB214C /* CircularImageViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageViewTests.swift; sourceTree = "<group>"; };
 		B1C3EB4326D15B1600EB214C /* CircularImageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageViewModel.swift; sourceTree = "<group>"; };
@@ -525,6 +531,7 @@
 		988E0B3026CB1F5A008BBBCF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B178BD2126D457C900820C24 /* ContributorTableViewCell */,
 				1319E06C26D4349400AA64CE /* DividerView.swift */,
 				DEBEC9D726D3E50500D92DB5 /* MapLocationView */,
 				B1C3EB3E26D15AEA00EB214C /* CircularImageView */,
@@ -544,6 +551,7 @@
 				988E0B3426CB2509008BBBCF /* EmptyViewSnapshotTests.swift */,
 				BCC5A10E26D0244300A7F3B4 /* SegmentedControlViewTests.swift */,
 				BCA85B4426CFF54F005D6843 /* TitleSubtitleSnapshotTests.swift */,
+				B178BD2626D45C3900820C24 /* ContributorTableViewCellTests.swift */,
 			);
 			path = SnapshotTests;
 			sourceTree = "<group>";
@@ -747,6 +755,15 @@
 				98F1C9902066E6EF0008FF57 /* SliderTableViewCell.xib */,
 			);
 			path = SliderCell;
+			sourceTree = "<group>";
+		};
+		B178BD2126D457C900820C24 /* ContributorTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B178BD2226D457E900820C24 /* ContributorTableViewCell.swift */,
+				B178BD2426D4584E00820C24 /* ContribuitorTableViewCellViewModel.swift */,
+			);
+			path = ContributorTableViewCell;
 			sourceTree = "<group>";
 		};
 		B1C3EB3E26D15AEA00EB214C /* CircularImageView */ = {
@@ -1069,6 +1086,7 @@
 			files = (
 				9877BBEA20F1A824001D2688 /* PlaceListViewController.swift in Sources */,
 				98F1C98D2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift in Sources */,
+				B178BD2526D4584E00820C24 /* ContribuitorTableViewCellViewModel.swift in Sources */,
 				98F1C9912066E6EF0008FF57 /* SliderTableViewCell.swift in Sources */,
 				98F1C9872066E4420008FF57 /* UITableView+Extensions.swift in Sources */,
 				980B048820CB58C600121291 /* MapHeaderView.swift in Sources */,
@@ -1131,6 +1149,7 @@
 				987AD733213F4537002F3D26 /* UIBarButtonItem+Extensions.swift in Sources */,
 				983341CB20DC561B006011CF /* PlaceSearchCoordinator.swift in Sources */,
 				9890C171206C4B16003C6F8D /* HomeCoordinator.swift in Sources */,
+				B178BD2326D457E900820C24 /* ContributorTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1145,6 +1164,7 @@
 				B19B82A526C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift in Sources */,
 				988E0B3526CB2509008BBBCF /* EmptyViewSnapshotTests.swift in Sources */,
 				BC51A83F26C471B60022780E /* UITableViewCellUnitTests.swift in Sources */,
+				B178BD2726D45C3900820C24 /* ContributorTableViewCellTests.swift in Sources */,
 				BCA85B4526CFF550005D6843 /* TitleSubtitleSnapshotTests.swift in Sources */,
 				B1F276EB26C40E0900996346 /* MKCoordinateSpanUnitTests.swift in Sources */,
 				BCC5A10F26D0244300A7F3B4 /* SegmentedControlViewTests.swift in Sources */,
