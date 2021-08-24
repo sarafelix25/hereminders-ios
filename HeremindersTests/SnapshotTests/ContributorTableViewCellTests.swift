@@ -18,7 +18,6 @@ class ContributorTableViewCellTests: XCTestCase {
 
     let sut = ContributorTableViewCell(with: viewModelSut)
 
-
-    assertSnapshot(matching: sut, as: Snapshotting.image(), record: true)
+    assertSnapshot(matching: sut, as: Snapshotting.image(), record: false)
   }
 }

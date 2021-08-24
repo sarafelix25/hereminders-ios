@@ -63,12 +63,6 @@ class ContributorTableViewCell: UITableViewCell {
 
   private func addConstraints() {
     NSLayoutConstraint.activate([
-      //      circurlarImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
-//      circurlarImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
-//
-//      titleSubtitleView.centerXAnchor.constraint(equalTo: centerXAnchor),
-//      titleSubtitleView.centerYAnchor.constraint(equalTo: centerYAnchor),
-
       circurlarImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5),
       circurlarImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
       circurlarImageView.widthAnchor.constraint(equalToConstant: 48),
