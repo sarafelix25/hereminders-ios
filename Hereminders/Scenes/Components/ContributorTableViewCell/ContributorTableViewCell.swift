@@ -17,9 +17,8 @@ class ContributorTableViewCell: UITableViewCell {
     addConstraints()
   }
 
-  init(with viewModel: ContribuitorTableViewCellViewModel) {
+  init() {
     super.init(style: .default, reuseIdentifier: ContributorTableViewCell.classIdentifier())
-    self.viewModel = viewModel
     configureUI()
     addSubviews()
     addConstraints()
@@ -29,22 +28,24 @@ class ContributorTableViewCell: UITableViewCell {
     fatalError("init(coder:) has not been implemented")
   }
 
-  // MARK: Private
+  // MARK: Internal
 
-  private var viewModel: ContribuitorTableViewCellViewModel?
+  func configure(with viewModel: ContribuitorTableViewCellViewModel) {
+    titleSubtitleView.configure(with: viewModel.titleSubtitleViewVM)
+    circularImageView.configure(with: viewModel.circurlarImageViewVM)
+  }
+
+  // MARK: Private
 
   private lazy var titleSubtitleView: TitleSubtitleView = {
     let view = TitleSubtitleView()
     view.translatesAutoresizingMaskIntoConstraints = false
-    view.configure(with: viewModel!.titleSubtitleViewVM) // TODO: tratamento force unwrap
     return view
-
   }()
 
   private lazy var circularImageView: CircularImageView = {
     let view = CircularImageView()
     view.translatesAutoresizingMaskIntoConstraints = false
-    view.configure(with: viewModel!.circurlarImageViewVM) // TODO: tratamento force unwrap
     return view
   }()
 

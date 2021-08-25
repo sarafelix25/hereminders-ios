@@ -16,7 +16,8 @@ class ContributorTableViewCellTests: XCTestCase {
     let circularViewModel = CircularImageViewModel(with: Image(named: "avatar"))
     let viewModelSut = ContribuitorTableViewCellViewModel(titleSubtitleViewVM: titleViewModel, circurlarImageViewVM: circularViewModel)
 
-    let sut = ContributorTableViewCell(with: viewModelSut)
+    let sut = ContributorTableViewCell()
+    sut.configure(with: viewModelSut)
 
     assertSnapshot(matching: sut, as: Snapshotting.image(), record: false)
   }
