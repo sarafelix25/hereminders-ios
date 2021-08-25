@@ -104,6 +104,10 @@ extension PlaceSearchViewController: UISearchResultsUpdating {
     }
 
     @objc func performSearch(_ searchController: UISearchController) {
+		
+		if searchController.searchBar.text == nil || searchController.searchBar.text == "" {
+			return
+		}
 
         self.tableView.isHidden = true
         self.activityIndicatorView.isHidden = false
