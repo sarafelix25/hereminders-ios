@@ -6,9 +6,9 @@
 //  Copyright © 2021 Rodrigo Borges. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-protocol ViewProtocol {
+protocol ViewProtocol: UIView {
 	func configureView()
 	func configureSubviews()
 	func configureConstraints()
