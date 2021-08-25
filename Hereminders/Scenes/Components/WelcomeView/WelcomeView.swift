@@ -25,7 +25,7 @@ final class WelcomeView: UIView {
 	private let iconImageView: UIImageView = {
 		let imageView = UIImageView(frame: .zero)
 		imageView.translatesAutoresizingMaskIntoConstraints = false
-		imageView.image = UIImage(named: "img_logo")
+		imageView.image = Asset.imgLogo.image
 		imageView.contentMode = .scaleAspectFit
 		return imageView
 	}()
@@ -48,7 +48,11 @@ final class WelcomeView: UIView {
 		return label
 	}()
 	
-	private let addNewPlaceButton = ButtonView()
+	private let addNewPlaceButton: ButtonView = {
+		let view = ButtonView()
+		view.translatesAutoresizingMaskIntoConstraints = false
+		return view
+	}()
 	
 	
 	// MARK: - Initialize
@@ -73,7 +77,6 @@ final class WelcomeView: UIView {
 		stackView.addArrangedSubview(addNewPlaceButton)
 		
 		backgroundColor = .white
-		addNewPlaceButton.translatesAutoresizingMaskIntoConstraints = false
 	}
 	
 	private func configureConstraints() {
