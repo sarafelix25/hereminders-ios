@@ -22,27 +22,12 @@ final class MapLocationView: UIView {
 
     init() {
         super.init(frame: .zero)
-        self.configSubview()
-        self.configConstraint()
+		  configureView()
     }
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        self.configSubview()
-        self.configConstraint()
-    }
-
-    private func configSubview() {
-        self.addSubview(self.mapView)
-    }
-
-    private func configConstraint() {
-        NSLayoutConstraint.activate([
-            self.mapView.topAnchor.constraint(equalTo: topAnchor),
-            self.mapView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            self.mapView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            self.mapView.trailingAnchor.constraint(equalTo: trailingAnchor)
-        ])
+		  configureView()
     }
 
     public func configure(with viewModel: MapLocationViewModel) {
@@ -58,3 +43,20 @@ final class MapLocationView: UIView {
 }
 
 
+// MARK: - Extension ViewProtocol
+extension MapLocationView: ViewProtocol {
+	
+	func configureSubviews() {
+		self.addSubview(self.mapView)
+	}
+	
+	func configureConstraints() {
+		NSLayoutConstraint.activate([
+			self.mapView.topAnchor.constraint(equalTo: topAnchor),
+			self.mapView.bottomAnchor.constraint(equalTo: bottomAnchor),
+			self.mapView.leadingAnchor.constraint(equalTo: leadingAnchor),
+			self.mapView.trailingAnchor.constraint(equalTo: trailingAnchor)
+		])
+	}
+	
+}
