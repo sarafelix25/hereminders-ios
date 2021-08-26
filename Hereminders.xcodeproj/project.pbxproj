@@ -855,6 +855,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98DA12DF2119173C0090CA2B /* Build configuration list for PBXNativeTarget "HeremindersTodayExtension" */;
 			buildPhases = (
+				ED261E4A26D72C8B000AB8AA /* Run SwiftLint */,
 				98DA12CF2119173C0090CA2B /* Sources */,
 				98DA12D02119173C0090CA2B /* Frameworks */,
 				98DA12D12119173C0090CA2B /* Resources */,
@@ -1076,6 +1077,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen\n";
+		};
+		ED261E4A26D72C8B000AB8AA /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
