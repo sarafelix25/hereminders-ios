@@ -1,0 +1,10 @@
+<Hereminders.ReminderListViewViewCode; frame = (0 0; 0 0); layer = <CALayer>>
+   | <UIStackView; frame = (0 0; 0 0); layer = <CALayer>>
+   |    | <Hereminders.TitleSubtitleView; frame = (0 0; 0 36); layer = <CALayer>>
+   |    |    | <UIStackView; frame = (0 0; 0 36); layer = <CALayer>>
+   |    |    |    | <UILabel; frame = (0 0; 0 18); text = 'Nome do endereço'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    |    | <_UILabelContentLayer> (layer)
+   |    |    |    | <UILabel; frame = (0 18; 0 18); text = 'Rua Bela Cintra'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    | <Hereminders.ButtonView; frame = (0 -50; 0 50); layer = <CALayer>>
+   |    |    | <UIButton; frame = (0 0; 0 50); opaque = NO; layer = <CALayer>>
+   |    |    |    | <UIButtonLabel; frame = (0 14.6667; 0 21); text = 'testo do botao'; opaque = NO; userInteractionEnabled = NO; layer = <_UILabelLayer>>

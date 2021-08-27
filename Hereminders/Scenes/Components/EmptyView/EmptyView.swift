@@ -25,35 +25,36 @@ final class EmptyView: UIView {
     public init() {
 
         super.init(frame: .zero)
-
-        self.configureSubviews()
-        self.configureConstraints()
+		  
+		  self.configureView()
     }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    private func configureSubviews() {
-
-        self.backgroundColor = .white
-
-        self.addSubview(self.emptyMessageLabel)
-    }
-
-    private func configureConstraints() {
-
-        NSLayoutConstraint.activate([
-
-            self.emptyMessageLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            self.emptyMessageLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            self.emptyMessageLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
-            self.emptyMessageLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16)
-        ])
-    }
-
     public func configure(with viewModel: EmptyViewModel) {
 
         self.emptyMessageLabel.text = viewModel.emptyMessage
     }
+}
+
+
+// MARK: - Extension ViewProtocol
+extension EmptyView: ViewProtocol {
+	
+	func configureSubviews() {
+		self.backgroundColor = .white
+		self.addSubview(self.emptyMessageLabel)
+	}
+	
+	func configureConstraints() {
+		NSLayoutConstraint.activate([
+			self.emptyMessageLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+			self.emptyMessageLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+			self.emptyMessageLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
+			self.emptyMessageLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16)
+		])
+	}
+	
 }
