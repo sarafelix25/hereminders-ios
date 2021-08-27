@@ -111,6 +111,10 @@
 		B1C3EB4526D15B1600EB214C /* CircularImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C3EB4326D15B1600EB214C /* CircularImageViewModel.swift */; };
 		B1C3EB4626D15B1600EB214C /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C3EB4426D15B1600EB214C /* CircularImageView.swift */; };
 		B1F276EB26C40E0900996346 /* MKCoordinateSpanUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */; };
+		BC02947526D913F60030F589 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC02947326D913F60030F589 /* WelcomeViewModel.swift */; };
+		BC02947626D913F60030F589 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC02947426D913F60030F589 /* WelcomeView.swift */; };
+		BC02947826D9141D0030F589 /* WelcomeViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC02947726D9141D0030F589 /* WelcomeViewSnapshotTests.swift */; };
+		BC02947A26D922860030F589 /* ContributorTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC02947926D922860030F589 /* ContributorTableViewCellTests.swift */; };
 		BC51A83F26C471B60022780E /* UITableViewCellUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */; };
 		BC847BA026D5420D00373A49 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC847B9F26D5420D00373A49 /* ViewProtocol.swift */; };
 		BCA85B4526CFF550005D6843 /* TitleSubtitleSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA85B4426CFF54F005D6843 /* TitleSubtitleSnapshotTests.swift */; };
@@ -285,6 +289,10 @@
 		B1C3EB4326D15B1600EB214C /* CircularImageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageViewModel.swift; sourceTree = "<group>"; };
 		B1C3EB4426D15B1600EB214C /* CircularImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
 		B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateSpanUnitTests.swift; sourceTree = "<group>"; };
+		BC02947326D913F60030F589 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		BC02947426D913F60030F589 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		BC02947726D9141D0030F589 /* WelcomeViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewSnapshotTests.swift; sourceTree = "<group>"; };
+		BC02947926D922860030F589 /* ContributorTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContributorTableViewCellTests.swift; sourceTree = "<group>"; };
 		BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellUnitTests.swift; sourceTree = "<group>"; };
 		BC847B9F26D5420D00373A49 /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
 		BCA85B4426CFF54F005D6843 /* TitleSubtitleSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TitleSubtitleSnapshotTests.swift; path = HeremindersTests/TitleSubtitleSnapshotTests.swift; sourceTree = SOURCE_ROOT; };
@@ -537,6 +545,7 @@
 		988E0B3026CB1F5A008BBBCF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				BC02947226D913F60030F589 /* WelcomeView */,
 				EDAA814B26D44BE900816933 /* ButtonView */,
 				B1C3EB3E26D15AEA00EB214C /* CircularImageView */,
 				B16C833526D82BC7006AAF7B /* ContributorTableViewCell */,
@@ -552,6 +561,8 @@
 		988E0B3326CB24EF008BBBCF /* SnapshotTests */ = {
 			isa = PBXGroup;
 			children = (
+				BC02947926D922860030F589 /* ContributorTableViewCellTests.swift */,
+				BC02947726D9141D0030F589 /* WelcomeViewSnapshotTests.swift */,
 				EDAA813926D44B8B00816933 /* ButtonViewSnapshotTests.swift */,
 				13DB8EFC26D42AF000CB86EA /* DividerViewSnapshotTests.swift */,
 				DEBEC9D526D3E4CA00D92DB5 /* MapLocationViewSnapshotTests.swift */,
@@ -781,6 +792,15 @@
 				B1C3EB4326D15B1600EB214C /* CircularImageViewModel.swift */,
 			);
 			path = CircularImageView;
+			sourceTree = "<group>";
+		};
+		BC02947226D913F60030F589 /* WelcomeView */ = {
+			isa = PBXGroup;
+			children = (
+				BC02947326D913F60030F589 /* WelcomeViewModel.swift */,
+				BC02947426D913F60030F589 /* WelcomeView.swift */,
+			);
+			path = WelcomeView;
 			sourceTree = "<group>";
 		};
 		BC847BA126D54C9E00373A49 /* Divider */ = {
@@ -1140,6 +1160,7 @@
 				98DCD2B420DEBCB800A49897 /* MKMapView+Extensions.swift in Sources */,
 				98DD30952068587D00AA7E75 /* LocationController.swift in Sources */,
 				98DCD2BB20E5B52200A49897 /* Annotation.swift in Sources */,
+				BC02947526D913F60030F589 /* WelcomeViewModel.swift in Sources */,
 				9897153420F2D16400F976FE /* PlaceListViewModel.swift in Sources */,
 				98DD30812068203300AA7E75 /* Reminder.swift in Sources */,
 				B1C3EB4626D15B1600EB214C /* CircularImageView.swift in Sources */,
@@ -1176,6 +1197,7 @@
 				987AD731213E1FCB002F3D26 /* NotificationName+Extensions.swift in Sources */,
 				BC847BA026D5420D00373A49 /* ViewProtocol.swift in Sources */,
 				987AD733213F4537002F3D26 /* UIBarButtonItem+Extensions.swift in Sources */,
+				BC02947626D913F60030F589 /* WelcomeView.swift in Sources */,
 				983341CB20DC561B006011CF /* PlaceSearchCoordinator.swift in Sources */,
 				9890C171206C4B16003C6F8D /* HomeCoordinator.swift in Sources */,
 			);
@@ -1186,11 +1208,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				133D727C26C6E1150065ECB5 /* MKPlaceMarkExtensionsUnitTest.swift in Sources */,
+				BC02947826D9141D0030F589 /* WelcomeViewSnapshotTests.swift in Sources */,
 				ED1D082026C5BD74001CA0EE /* AnnotationUnitTest.swift in Sources */,
 				EDAA813A26D44B8B00816933 /* ButtonViewSnapshotTests.swift in Sources */,
 				DE04FA2E26C45B7900D8D498 /* UIColorUnitTests.swift in Sources */,
 				1349ADC126C5411100981469 /* UnitTestStructPlaceResult.swift in Sources */,
 				B19B82A526C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift in Sources */,
+				BC02947A26D922860030F589 /* ContributorTableViewCellTests.swift in Sources */,
 				988E0B3526CB2509008BBBCF /* EmptyViewSnapshotTests.swift in Sources */,
 				BC51A83F26C471B60022780E /* UITableViewCellUnitTests.swift in Sources */,
 				BCA85B4526CFF550005D6843 /* TitleSubtitleSnapshotTests.swift in Sources */,
