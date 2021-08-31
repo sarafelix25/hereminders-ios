@@ -124,6 +124,9 @@
 		DEBEC9D626D3E4CA00D92DB5 /* MapLocationViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEC9D526D3E4CA00D92DB5 /* MapLocationViewSnapshotTests.swift */; };
 		DEBEC9DA26D3E50500D92DB5 /* MapLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEC9D826D3E50500D92DB5 /* MapLocationView.swift */; };
 		DEBEC9DB26D3E50500D92DB5 /* MapLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEC9D926D3E50500D92DB5 /* MapLocationViewModel.swift */; };
+		DEFB59FA26DE6CAF00E76974 /* TextInputCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB59F926DE6CAF00E76974 /* TextInputCellViewModel.swift */; };
+		DEFB59FC26DE6DE800E76974 /* TextInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB59FB26DE6DE800E76974 /* TextInputCell.swift */; };
+		DEFB59FE26DE71EA00E76974 /* TextInputCellSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB59FD26DE71EA00E76974 /* TextInputCellSnapshotTests.swift */; };
 		ED1D082026C5BD74001CA0EE /* AnnotationUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D081F26C5BD74001CA0EE /* AnnotationUnitTest.swift */; };
 		EDAA813A26D44B8B00816933 /* ButtonViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA813926D44B8B00816933 /* ButtonViewSnapshotTests.swift */; };
 		EDAA814326D44BBC00816933 /* ButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA814126D44BBC00816933 /* ButtonViewModel.swift */; };
@@ -301,6 +304,9 @@
 		DEBEC9D526D3E4CA00D92DB5 /* MapLocationViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationViewSnapshotTests.swift; sourceTree = "<group>"; };
 		DEBEC9D826D3E50500D92DB5 /* MapLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationView.swift; sourceTree = "<group>"; };
 		DEBEC9D926D3E50500D92DB5 /* MapLocationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationViewModel.swift; sourceTree = "<group>"; };
+		DEFB59F926DE6CAF00E76974 /* TextInputCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputCellViewModel.swift; sourceTree = "<group>"; };
+		DEFB59FB26DE6DE800E76974 /* TextInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputCell.swift; sourceTree = "<group>"; };
+		DEFB59FD26DE71EA00E76974 /* TextInputCellSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputCellSnapshotTests.swift; sourceTree = "<group>"; };
 		ED1D081F26C5BD74001CA0EE /* AnnotationUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationUnitTest.swift; sourceTree = "<group>"; };
 		EDAA813926D44B8B00816933 /* ButtonViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewSnapshotTests.swift; sourceTree = "<group>"; };
 		EDAA814126D44BBC00816933 /* ButtonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewModel.swift; sourceTree = "<group>"; };
@@ -537,6 +543,7 @@
 		988E0B3026CB1F5A008BBBCF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DEFB59F826DE6C6D00E76974 /* TextInputTableViewCell */,
 				EDAA814B26D44BE900816933 /* ButtonView */,
 				B1C3EB3E26D15AEA00EB214C /* CircularImageView */,
 				B16C833526D82BC7006AAF7B /* ContributorTableViewCell */,
@@ -559,6 +566,7 @@
 				988E0B3426CB2509008BBBCF /* EmptyViewSnapshotTests.swift */,
 				BCC5A10E26D0244300A7F3B4 /* SegmentedControlViewTests.swift */,
 				BCA85B4426CFF54F005D6843 /* TitleSubtitleSnapshotTests.swift */,
+				DEFB59FD26DE71EA00E76974 /* TextInputCellSnapshotTests.swift */,
 			);
 			path = SnapshotTests;
 			sourceTree = "<group>";
@@ -819,6 +827,15 @@
 			name = MapLocationView;
 			path = Hereminders/Scenes/MapLocationView;
 			sourceTree = SOURCE_ROOT;
+		};
+		DEFB59F826DE6C6D00E76974 /* TextInputTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DEFB59FB26DE6DE800E76974 /* TextInputCell.swift */,
+				DEFB59F926DE6CAF00E76974 /* TextInputCellViewModel.swift */,
+			);
+			path = TextInputTableViewCell;
+			sourceTree = "<group>";
 		};
 		EDAA814B26D44BE900816933 /* ButtonView */ = {
 			isa = PBXGroup;
@@ -1135,6 +1152,7 @@
 				9890C173206C4E55003C6F8D /* ReminderCoordinator.swift in Sources */,
 				989902C920FD85B600865079 /* PremiumCoordinator.swift in Sources */,
 				9877BBED20F1AA21001D2688 /* PlaceListCoordinator.swift in Sources */,
+				DEFB59FA26DE6CAF00E76974 /* TextInputCellViewModel.swift in Sources */,
 				9807EB3420C9EEE800B5F7DA /* ReminderViewModel.swift in Sources */,
 				B16C833C26D82C92006AAF7B /* ContributorTableViewCell.swift in Sources */,
 				98DCD2B420DEBCB800A49897 /* MKMapView+Extensions.swift in Sources */,
@@ -1146,6 +1164,7 @@
 				9871B41421447DEF0050C651 /* ReminderDataController.swift in Sources */,
 				9804F6EA2066DBB400820153 /* UIViewController+Extensions.swift in Sources */,
 				98D02AC820673F0700E8BC91 /* SegmentedControlTableViewCell.swift in Sources */,
+				DEFB59FC26DE6DE800E76974 /* TextInputCell.swift in Sources */,
 				EDAA814426D44BBC00816933 /* ButtonView.swift in Sources */,
 				B16C833D26D82C92006AAF7B /* ContribuitorTableViewCellViewModel.swift in Sources */,
 				989BAB0720F41BC300C82DF7 /* UIColor+Extensions.swift in Sources */,
@@ -1185,6 +1204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEFB59FE26DE71EA00E76974 /* TextInputCellSnapshotTests.swift in Sources */,
 				133D727C26C6E1150065ECB5 /* MKPlaceMarkExtensionsUnitTest.swift in Sources */,
 				ED1D082026C5BD74001CA0EE /* AnnotationUnitTest.swift in Sources */,
 				EDAA813A26D44B8B00816933 /* ButtonViewSnapshotTests.swift in Sources */,
