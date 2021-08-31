@@ -73,7 +73,10 @@ extension SettingsViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        return 1
+		if section == 2 {
+			return 2
+		}
+		return 1
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -90,6 +93,14 @@ extension SettingsViewController: UITableViewDataSource {
 
         case 1:
             cell?.textLabel?.text = L10n.Settings.version(Bundle.versionNumber, Bundle.buildNumber)
+			
+			case 2:
+				if indexPath.row == 0 {
+					cell?.textLabel?.text = L10n.Settings.logoCredit
+				} else {
+					cell?.textLabel?.text = "Contributors"
+					cell?.accessoryType = .disclosureIndicator
+				}
 
         default:
             cell?.textLabel?.text = L10n.Settings.logoCredit
