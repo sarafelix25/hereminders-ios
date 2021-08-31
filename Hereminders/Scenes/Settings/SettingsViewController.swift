@@ -8,6 +8,24 @@
 
 import UIKit
 
+enum SectionName: Int, CaseIterable {
+	case places
+   case about
+	case credits
+	
+	func getSectionName() -> String {
+		switch self {
+			case .places:
+				return L10n.Settings.places
+			case .about:
+				return L10n.Settings.about
+			case .credits:
+				return L10n.Settings.credits
+		}
+	}
+			  
+}
+
 protocol SettingsViewControllerDelegate: AnyObject {
 
     func settingsViewControllerWantsToBecomePremium()
@@ -69,12 +87,12 @@ extension SettingsViewController: UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
 
-        return 3
+		return SectionName.allCases.count
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-		if section == 2 {
+		if section == SectionName.credits.rawValue {
 			return 2
 		}
 		return 1
@@ -87,24 +105,26 @@ extension SettingsViewController: UITableViewDataSource {
         if cell == nil {
             cell = UITableViewCell(style: .default, reuseIdentifier: "SettingsCell")
         }
+		
+		guard let sectionIndex: SectionName = SectionName(rawValue: indexPath.section)
+		else { return UITableViewCell() }
 
-        switch indexPath.section {
-        case 0:
+        switch sectionIndex {
+			case .places:
             cell?.textLabel?.text = L10n.Settings.managePlaces
 
-        case 1:
+			case .about:
             cell?.textLabel?.text = L10n.Settings.version(Bundle.versionNumber, Bundle.buildNumber)
+				cell?.isUserInteractionEnabled = false
 			
-			case 2:
+			case .credits:
 				if indexPath.row == 0 {
 					cell?.textLabel?.text = L10n.Settings.logoCredit
+					cell?.isUserInteractionEnabled = false
 				} else {
 					cell?.textLabel?.text = L10n.Settings.contributors
 					cell?.accessoryType = .disclosureIndicator
 				}
-
-        default:
-            cell?.textLabel?.text = L10n.Settings.logoCredit
 
         }
 
@@ -112,31 +132,28 @@ extension SettingsViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        
-        switch section {
-        case 0:
-            return L10n.Settings.places
-
-        case 1:
-            return L10n.Settings.about
-
-        default:
-            return L10n.Settings.credits
-        }
+		
+		guard let sectionIndex: SectionName = SectionName(rawValue: section)
+		else { return nil }
+		
+		return sectionIndex.getSectionName()
     }
 }
 
 extension SettingsViewController: UITableViewDelegate {
 
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-
-        if indexPath.section == 0 {
-
-            self.delegate?.settingsViewControllerWantsToManagePlaces()
-		} else if indexPath.section == 2 && indexPath.row == 1 {
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		tableView.deselectRow(at: indexPath, animated: true)
+		
+		if indexPath.section == SectionName.places.rawValue {
 			
-			self.delegate?.settingsViewControllerWantsToContributors()
+			self.delegate?.settingsViewControllerWantsToManagePlaces()
+			
+		} else if indexPath.section == SectionName.credits.rawValue {
+			
+			if indexPath.row == 1 {
+				self.delegate?.settingsViewControllerWantsToContributors()
+			}
 		}
-    }
+	}
 }
