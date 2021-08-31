@@ -13,6 +13,7 @@ protocol SettingsViewControllerDelegate: AnyObject {
     func settingsViewControllerWantsToBecomePremium()
     func settingsViewControllerWantsToManagePlaces()
     func settingsViewControllerWantsToClose()
+	 func settingsViewControllerWantsToContributors()
 }
 
 class SettingsViewController: UIViewController {
@@ -133,6 +134,9 @@ extension SettingsViewController: UITableViewDelegate {
         if indexPath.section == 0 {
 
             self.delegate?.settingsViewControllerWantsToManagePlaces()
-        }
+		} else if indexPath.section == 2 && indexPath.row == 1 {
+			
+			self.delegate?.settingsViewControllerWantsToContributors()
+		}
     }
 }
