@@ -18,7 +18,7 @@ class ContributorsViewController: UIViewController {
 	
 	private func configureView() {
 		view.backgroundColor = .white
-		title = "Contributors"
+		title = L10n.Settings.contributors
 	}
 	
 }

@@ -99,7 +99,7 @@ extension SettingsViewController: UITableViewDataSource {
 				if indexPath.row == 0 {
 					cell?.textLabel?.text = L10n.Settings.logoCredit
 				} else {
-					cell?.textLabel?.text = "Contributors"
+					cell?.textLabel?.text = L10n.Settings.contributors
 					cell?.accessoryType = .disclosureIndicator
 				}
 
