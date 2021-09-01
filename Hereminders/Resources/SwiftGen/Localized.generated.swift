@@ -88,6 +88,8 @@ internal enum L10n {
     internal static let about = L10n.tr("Localizable", "Settings.About")
     /// Become Premium 🤩
     internal static let becomePremium = L10n.tr("Localizable", "Settings.BecomePremium")
+    /// Contributors
+    internal static let contributors = L10n.tr("Localizable", "Settings.Contributors")
     /// Credits
     internal static let credits = L10n.tr("Localizable", "Settings.Credits")
     /// Icons made by Smashicons (www.flaticon.com)

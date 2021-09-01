@@ -111,6 +111,8 @@
 		B1C3EB4526D15B1600EB214C /* CircularImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C3EB4326D15B1600EB214C /* CircularImageViewModel.swift */; };
 		B1C3EB4626D15B1600EB214C /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C3EB4426D15B1600EB214C /* CircularImageView.swift */; };
 		B1F276EB26C40E0900996346 /* MKCoordinateSpanUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */; };
+		BC01518826DEE9D5005B140F /* ContributorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01518726DEE9D5005B140F /* ContributorsViewController.swift */; };
+		BC01518A26DEEAF2005B140F /* ContributorsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01518926DEEAF2005B140F /* ContributorsCoordinator.swift */; };
 		BC02947526D913F60030F589 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC02947326D913F60030F589 /* WelcomeViewModel.swift */; };
 		BC02947626D913F60030F589 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC02947426D913F60030F589 /* WelcomeView.swift */; };
 		BC02947826D9141D0030F589 /* WelcomeViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC02947726D9141D0030F589 /* WelcomeViewSnapshotTests.swift */; };
@@ -289,6 +291,8 @@
 		B1C3EB4326D15B1600EB214C /* CircularImageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageViewModel.swift; sourceTree = "<group>"; };
 		B1C3EB4426D15B1600EB214C /* CircularImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
 		B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateSpanUnitTests.swift; sourceTree = "<group>"; };
+		BC01518726DEE9D5005B140F /* ContributorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsViewController.swift; sourceTree = "<group>"; };
+		BC01518926DEEAF2005B140F /* ContributorsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsCoordinator.swift; sourceTree = "<group>"; };
 		BC02947326D913F60030F589 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		BC02947426D913F60030F589 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		BC02947726D9141D0030F589 /* WelcomeViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewSnapshotTests.swift; sourceTree = "<group>"; };
@@ -472,6 +476,7 @@
 		9804F6E02066D87900820153 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				BC01518626DEE9B1005B140F /* Contributors */,
 				988E0B3026CB1F5A008BBBCF /* Components */,
 				9804F6E42066DAA400820153 /* Home */,
 				98F1C97A2066DFA90008FF57 /* NewReminder */,
@@ -594,6 +599,7 @@
 				9877BBF320F1B009001D2688 /* SettingsCoordinator.swift */,
 				9897153A20F39A1E00F976FE /* PlaceDetailsCoordinator.swift */,
 				989902C820FD85B600865079 /* PremiumCoordinator.swift */,
+				BC01518926DEEAF2005B140F /* ContributorsCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -792,6 +798,14 @@
 				B1C3EB4326D15B1600EB214C /* CircularImageViewModel.swift */,
 			);
 			path = CircularImageView;
+			sourceTree = "<group>";
+		};
+		BC01518626DEE9B1005B140F /* Contributors */ = {
+			isa = PBXGroup;
+			children = (
+				BC01518726DEE9D5005B140F /* ContributorsViewController.swift */,
+			);
+			path = Contributors;
 			sourceTree = "<group>";
 		};
 		BC02947226D913F60030F589 /* WelcomeView */ = {
@@ -1164,6 +1178,7 @@
 				9804F6AD2066D79300820153 /* AppDelegate.swift in Sources */,
 				1319E06D26D4349400AA64CE /* DividerView.swift in Sources */,
 				988082CA20C1F31900B4E660 /* HomeViewModel.swift in Sources */,
+				BC01518826DEE9D5005B140F /* ContributorsViewController.swift in Sources */,
 				B1C3EB4526D15B1600EB214C /* CircularImageViewModel.swift in Sources */,
 				EDAA814326D44BBC00816933 /* ButtonViewModel.swift in Sources */,
 				98DD30832068203300AA7E75 /* Place.swift in Sources */,
@@ -1194,6 +1209,7 @@
 				BCA85B4A26CFF651005D6843 /* TitleSubtitleViewModel.swift in Sources */,
 				9871B4192144836A0050C651 /* AppDelegate+NotificationsConfiguration.swift in Sources */,
 				986B9C7F2140CF5000A1D103 /* Bundle+Extensions.swift in Sources */,
+				BC01518A26DEEAF2005B140F /* ContributorsCoordinator.swift in Sources */,
 				9877BBF120F1ADA1001D2688 /* SettingsViewController.swift in Sources */,
 				988E0B3726CB291D008BBBCF /* EmptyViewModel.swift in Sources */,
 				9844E40521080B0B0071B116 /* String+Extensions.swift in Sources */,
