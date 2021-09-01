@@ -9,17 +9,11 @@
 import Foundation
 import UIKit
 
-class TextInputCell: UIView {
+class TextInputCell: UITableViewCell {
 
-   private var textInputCell: UITableViewCell = {
-        let cell = UITableViewCell()
-        cell.translatesAutoresizingMaskIntoConstraints = false
-        cell.backgroundColor = .white
+    static let identifier: String = "TextInputCell"
 
-        return cell
-    }()
-
-    private var texField: UITextField = {
+    private var textField: UITextField = {
         let text = UITextField()
         text.translatesAutoresizingMaskIntoConstraints = false
         text.backgroundColor = .white
@@ -28,8 +22,8 @@ class TextInputCell: UIView {
         return text
     }()
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.configureView()
     }
 
@@ -38,29 +32,23 @@ class TextInputCell: UIView {
     }
 
     func configure(with viewModel: TextInputCellViewModel ) {
-        self.texField.text = viewModel.textInput
-        self.texField.placeholder = viewModel.placeholder
+        self.textField.text = viewModel.textInput
+        self.textField.placeholder = viewModel.placeholder
     }
 }
 
 
 extension TextInputCell: ViewProtocol {
     func configureSubviews() {
-        self.textInputCell.addSubview(self.texField)
-        self.addSubview(self.textInputCell)
+        self.contentView.addSubview(self.textField)
     }
 
     func configureConstraints() {
         NSLayoutConstraint.activate([
-            self.textInputCell.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
-            self.textInputCell.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor),
-            self.textInputCell.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            self.textInputCell.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-
-            self.texField.topAnchor.constraint(equalTo: self.textInputCell.topAnchor),
-            self.texField.bottomAnchor.constraint(equalTo: self.textInputCell.bottomAnchor),
-            self.texField.leadingAnchor.constraint(equalTo: self.textInputCell.leadingAnchor, constant: 16),
-            self.texField.trailingAnchor.constraint(equalTo: self.textInputCell.trailingAnchor, constant: -16)
+            self.textField.topAnchor.constraint(equalTo: self.topAnchor),
+            self.textField.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            self.textField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
+            self.textField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16)
         ])
     }
 }
