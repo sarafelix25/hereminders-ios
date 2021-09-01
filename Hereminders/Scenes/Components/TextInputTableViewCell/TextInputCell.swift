@@ -11,8 +11,6 @@ import UIKit
 
 class TextInputCell: UITableViewCell {
 
-    static let identifier: String = "TextInputCell"
-
     private var textField: UITextField = {
         let text = UITextField()
         text.translatesAutoresizingMaskIntoConstraints = false
