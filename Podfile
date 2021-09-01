@@ -5,6 +5,7 @@ target 'Hereminders' do
 
   pod 'RxSwift'
   pod 'SwiftGen'
+  pod 'SwiftLint'
 
   target 'HeremindersTests' do
     inherit! :search_paths

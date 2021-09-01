@@ -858,6 +858,7 @@
 			buildPhases = (
 				884F9C339C730D672A45877F /* [CP] Check Pods Manifest.lock */,
 				9897154020F3B57800F976FE /* SwiftGen Script */,
+				ED2CE79526DAE9F300B1BB2D /* SwiftLint */,
 				9804F6A52066D79300820153 /* Sources */,
 				9804F6A62066D79300820153 /* Frameworks */,
 				9804F6A72066D79300820153 /* Resources */,
@@ -1121,6 +1122,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen\n";
+		};
+		ED2CE79526DAE9F300B1BB2D /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
