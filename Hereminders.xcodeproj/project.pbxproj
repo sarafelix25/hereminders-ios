@@ -127,6 +127,9 @@
 		BCC5A11426D0246200A7F3B4 /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC5A11226D0246200A7F3B4 /* SegmentedControlView.swift */; };
 		DE04FA2E26C45B7900D8D498 /* UIColorUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE04FA2D26C45B7900D8D498 /* UIColorUnitTests.swift */; };
 		DE1E78F726C41B1F002A4CBA /* StringUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E78F626C41B1F002A4CBA /* StringUnitTests.swift */; };
+		DE4282CE26E10EEF0014EB5A /* TextInputCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4282CC26E10EEF0014EB5A /* TextInputCellViewModel.swift */; };
+		DE4282CF26E10EEF0014EB5A /* TextInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4282CD26E10EEF0014EB5A /* TextInputCell.swift */; };
+		DE4282D126E10F0B0014EB5A /* TextInputCellSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4282D026E10F0B0014EB5A /* TextInputCellSnapshotTests.swift */; };
 		DEBEC9D626D3E4CA00D92DB5 /* MapLocationViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEC9D526D3E4CA00D92DB5 /* MapLocationViewSnapshotTests.swift */; };
 		DEBEC9DA26D3E50500D92DB5 /* MapLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEC9D826D3E50500D92DB5 /* MapLocationView.swift */; };
 		DEBEC9DB26D3E50500D92DB5 /* MapLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEC9D926D3E50500D92DB5 /* MapLocationViewModel.swift */; };
@@ -310,6 +313,9 @@
 		D5E098537E96CE7E62A81278 /* Pods-HeremindersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeremindersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeremindersTests/Pods-HeremindersTests.release.xcconfig"; sourceTree = "<group>"; };
 		DE04FA2D26C45B7900D8D498 /* UIColorUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorUnitTests.swift; sourceTree = "<group>"; };
 		DE1E78F626C41B1F002A4CBA /* StringUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUnitTests.swift; sourceTree = "<group>"; };
+		DE4282CC26E10EEF0014EB5A /* TextInputCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputCellViewModel.swift; sourceTree = "<group>"; };
+		DE4282CD26E10EEF0014EB5A /* TextInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputCell.swift; sourceTree = "<group>"; };
+		DE4282D026E10F0B0014EB5A /* TextInputCellSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputCellSnapshotTests.swift; sourceTree = "<group>"; };
 		DEBEC9D526D3E4CA00D92DB5 /* MapLocationViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationViewSnapshotTests.swift; sourceTree = "<group>"; };
 		DEBEC9D826D3E50500D92DB5 /* MapLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationView.swift; sourceTree = "<group>"; };
 		DEBEC9D926D3E50500D92DB5 /* MapLocationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationViewModel.swift; sourceTree = "<group>"; };
@@ -550,6 +556,7 @@
 		988E0B3026CB1F5A008BBBCF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DE4282CB26E10EEF0014EB5A /* TextInputTableViewCell */,
 				BC02947226D913F60030F589 /* WelcomeView */,
 				EDAA814B26D44BE900816933 /* ButtonView */,
 				B1C3EB3E26D15AEA00EB214C /* CircularImageView */,
@@ -566,6 +573,7 @@
 		988E0B3326CB24EF008BBBCF /* SnapshotTests */ = {
 			isa = PBXGroup;
 			children = (
+				DE4282D026E10F0B0014EB5A /* TextInputCellSnapshotTests.swift */,
 				BC02947926D922860030F589 /* ContributorTableViewCellTests.swift */,
 				BC02947726D9141D0030F589 /* WelcomeViewSnapshotTests.swift */,
 				EDAA813926D44B8B00816933 /* ButtonViewSnapshotTests.swift */,
@@ -842,6 +850,15 @@
 				BCC5A11226D0246200A7F3B4 /* SegmentedControlView.swift */,
 			);
 			path = SegmentedControlView;
+			sourceTree = "<group>";
+		};
+		DE4282CB26E10EEF0014EB5A /* TextInputTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE4282CC26E10EEF0014EB5A /* TextInputCellViewModel.swift */,
+				DE4282CD26E10EEF0014EB5A /* TextInputCell.swift */,
+			);
+			path = TextInputTableViewCell;
 			sourceTree = "<group>";
 		};
 		DEBEC9D726D3E50500D92DB5 /* MapLocationView */ = {
@@ -1210,10 +1227,12 @@
 				9871B4192144836A0050C651 /* AppDelegate+NotificationsConfiguration.swift in Sources */,
 				986B9C7F2140CF5000A1D103 /* Bundle+Extensions.swift in Sources */,
 				BC01518A26DEEAF2005B140F /* ContributorsCoordinator.swift in Sources */,
+				DE4282CE26E10EEF0014EB5A /* TextInputCellViewModel.swift in Sources */,
 				9877BBF120F1ADA1001D2688 /* SettingsViewController.swift in Sources */,
 				988E0B3726CB291D008BBBCF /* EmptyViewModel.swift in Sources */,
 				9844E40521080B0B0071B116 /* String+Extensions.swift in Sources */,
 				98DD30902068373E00AA7E75 /* PlaceAnnotation.swift in Sources */,
+				DE4282CF26E10EEF0014EB5A /* TextInputCell.swift in Sources */,
 				9807EB3620C9F23000B5F7DA /* ReminderViewController+TableViewDataSource.swift in Sources */,
 				9890C16F206C494D003C6F8D /* AppCoordinator.swift in Sources */,
 				98DCD2BE20E8242B00A49897 /* CoordinatorType.swift in Sources */,
@@ -1252,6 +1271,7 @@
 				BC02947A26D922860030F589 /* ContributorTableViewCellTests.swift in Sources */,
 				988E0B3526CB2509008BBBCF /* EmptyViewSnapshotTests.swift in Sources */,
 				BC51A83F26C471B60022780E /* UITableViewCellUnitTests.swift in Sources */,
+				DE4282D126E10F0B0014EB5A /* TextInputCellSnapshotTests.swift in Sources */,
 				BCA85B4526CFF550005D6843 /* TitleSubtitleSnapshotTests.swift in Sources */,
 				B1F276EB26C40E0900996346 /* MKCoordinateSpanUnitTests.swift in Sources */,
 				BCC5A10F26D0244300A7F3B4 /* SegmentedControlViewTests.swift in Sources */,
