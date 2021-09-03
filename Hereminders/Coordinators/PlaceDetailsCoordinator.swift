@@ -25,8 +25,8 @@ class PlaceDetailsCoordinator: CoordinatorType {
 
     public func start() {
 
-        let viewController = PlaceDetailsViewController(dataController: self.dataController, place: self.place)
+//        let viewController = PlaceDetailsViewController(dataController: self.dataController, place: self.place)
+        let viewController = PlaceDetailsViewController2()
         self.navigationController.pushViewController(viewController, animated: true)
     }
 }
-
