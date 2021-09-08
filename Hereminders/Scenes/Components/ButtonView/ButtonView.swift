@@ -23,36 +23,38 @@ final class ButtonView: UIView {
     init() {
         
         super.init(frame: .zero)
-        
-        self.configureSubviews()
-        self.configureConstraints()
+		
+		  configureView()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        
-        self.configureSubviews()
-        self.configureConstraints()
-    
+		
+		  configureView()
     }
     
     //MARK: - ViewCode
-    private func configureSubviews() {
-        self.backgroundColor = .white
-        
-        self.addSubview(self.button)
-    }
-    
-    private func configureConstraints() {
-        NSLayoutConstraint.activate([
-                    self.button.topAnchor.constraint(equalTo: topAnchor),
-                    self.button.bottomAnchor.constraint(equalTo: bottomAnchor),
-                    self.button.leadingAnchor.constraint(equalTo: leadingAnchor),
-                    self.button.trailingAnchor.constraint(equalTo: trailingAnchor)
-                ])
-    }
-    
     func configure(with viewModel: ButtonViewModel) {
         self.button.setTitle(viewModel.titleButton, for: UIControl.State.normal)
     }
+}
+
+
+// MARK: - Extension ViewProtocol
+extension ButtonView: ViewProtocol {
+	
+	func configureSubviews() {
+		self.backgroundColor = .white
+		self.addSubview(self.button)
+	}
+	
+	func configureConstraints() {
+		NSLayoutConstraint.activate([
+			self.button.topAnchor.constraint(equalTo: topAnchor),
+			self.button.bottomAnchor.constraint(equalTo: bottomAnchor),
+			self.button.leadingAnchor.constraint(equalTo: leadingAnchor),
+			self.button.trailingAnchor.constraint(equalTo: trailingAnchor)
+		])
+	}
+	
 }

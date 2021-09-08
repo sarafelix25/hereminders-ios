@@ -7,9 +7,22 @@
 //
 
 import UIKit
+import MapKit
 
 final class PlaceDetailsView: UIView {
-    lazy var tableView: UITableView = {
+    private let stackView: UIStackView = {
+        let stackView: UIStackView = .init(frame: .zero)
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        return stackView
+    }()
+    
+    private lazy var placeView: MapLocationView = {
+        let placeView: MapLocationView = .init()
+        placeView.translatesAutoresizingMaskIntoConstraints = false
+        return placeView
+    }()
+    
+    private lazy var tableView: UITableView = {
         let tableView: UITableView = .init(frame: .zero, style: .grouped)
         tableView.dataSource = self
         tableView.rowHeight = UITableView.automaticDimension
@@ -24,19 +37,15 @@ final class PlaceDetailsView: UIView {
         
         TextInputTableViewCell.registerXib(in: self.tableView)
         
-        
-        // setar puxando a stack
-        addSubview(tableView)
-        NSLayoutConstraint.activate([
-            tableView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            tableView.topAnchor.constraint(equalTo: self.topAnchor),
-            tableView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
-        ])
+        self.configureSubviews()
+        self.configureConstraints()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+        
+        self.configureSubviews()
+        self.configureConstraints()
     }
 }
 
@@ -101,13 +110,25 @@ extension PlaceDetailsView: UITableViewDelegate {
 }
 
 extension PlaceDetailsView: ViewProtocol {
+    func configureSubviews() {
+        addSubview(stackView)
+        stackView.addArrangedSubview(placeView)
+        stackView.addArrangedSubview(tableView)
+    }
+    
+    func configureConstraints() {
+        NSLayoutConstraint.activate([
+            stackView.topAnchor.constraint(equalTo: self.topAnchor),
+            stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            
+//            placeView.heightAnchor.constraint(equalToConstant: 150),
+//            placeView.topAnchor.constraint(equalTo: self.stackView.topAnchor),
+            
+            tableView.bottomAnchor.constraint(equalTo: self.stackView.bottomAnchor),
+            tableView.topAnchor.constraint(equalTo: self.stackView.topAnchor)
+            
+            ])
+    }
 }
-//git pull devpass dev
-/*
- PlacelLocationView antes da TableView
- -> pode usar stackview
- 
- PlView height 150, widht: seguindo a view
- 
- 
-*/

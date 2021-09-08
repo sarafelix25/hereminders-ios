@@ -54,6 +54,15 @@ class SettingsCoordinator: CoordinatorType {
 
         self.childCoordinators.append(premiumCoordinator)
     }
+	
+	func showContributors() {
+		
+		if let presentedViewController = self.navigationController.presentedViewController as? UINavigationController {
+			let contributorsCoordinator = ContributorsCoordinator(navigationController: presentedViewController)
+			contributorsCoordinator.start()
+			self.childCoordinators.append(contributorsCoordinator)
+		}
+	}
 }
 
 extension SettingsCoordinator: SettingsViewControllerDelegate {
@@ -72,4 +81,9 @@ extension SettingsCoordinator: SettingsViewControllerDelegate {
 
         self.delegate?.settingsCoordinatorDidCancel()
     }
+	
+	func settingsViewControllerWantsToContributors() {
+		
+		self.showContributors()
+	}
 }

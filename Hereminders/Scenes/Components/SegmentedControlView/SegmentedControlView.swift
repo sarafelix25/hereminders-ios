@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SegmentedControlView: UIView {
+final class SegmentedControlView: UIView {
 	
 	// MARK: - UI Element
 	private var segmentedControl: UISegmentedControl = {
@@ -28,9 +28,8 @@ class SegmentedControlView: UIView {
 	override init(frame: CGRect = .zero) {
 		super.init(frame: frame)
 		
-		configureSubviews()
-		configureConstraints()
-		configureAdditional()
+		backgroundColor = .white
+		configureView()
 	}
 	
 	required init?(coder: NSCoder) {
@@ -39,28 +38,30 @@ class SegmentedControlView: UIView {
 	
 	
 	// MARK: - Function
-	private func configureSubviews() {
+	func configure(with viewModel: SegmentedControlViewViewModel){
+		for (index, name) in viewModel.namesSegment.enumerated() {
+			segmentedControl.insertSegment(withTitle: name, at: index, animated: false)
+		}
+		segmentedControl.selectedSegmentIndex = viewModel.initialIndex
+	}
+	
+}
+
+
+// MARK: - Extension ViewProtocol
+extension SegmentedControlView: ViewProtocol {
+	
+	func configureSubviews() {
 		addSubview(segmentedControl)
 	}
 	
-	private func configureConstraints() {
+	func configureConstraints() {
 		NSLayoutConstraint.activate([
 			segmentedControl.topAnchor.constraint(equalTo: topAnchor, constant: 16),
 			segmentedControl.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
 			segmentedControl.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
 			segmentedControl.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16),
 		])
-	}
-	
-	private func configureAdditional() {
-		backgroundColor = .white
-	}
-	
-	func configure(with viewModel: SegmentedControlViewViewModel){
-		for (index, name) in viewModel.namesSegment.enumerated() {
-			segmentedControl.insertSegment(withTitle: name, at: index, animated: false)
-		}
-		segmentedControl.selectedSegmentIndex = viewModel.initialIndex
 	}
 	
 }

@@ -14,8 +14,7 @@ final class CircularImageView: UIView {
 
    init() {
     super.init(frame: .zero)
-    configureSubviews()
-    configureConstrains()
+		configureView()
   }
 
   required init?(coder: NSCoder) {
@@ -38,16 +37,23 @@ final class CircularImageView: UIView {
     return imageView
   }()
 
-  private func configureSubviews() {
-    addSubview(circularImageView)
-  }
+}
 
-  private func configureConstrains() {
-    NSLayoutConstraint.activate([
-      circularImageView.widthAnchor.constraint(equalToConstant: 48),
-      circularImageView.heightAnchor.constraint(equalToConstant: 48),
-      circularImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
-      circularImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
-    ])
-  }
+
+// MARK: - Extension ViewProtocol
+extension CircularImageView: ViewProtocol {
+	
+	func configureSubviews() {
+		addSubview(circularImageView)
+	}
+	
+	func configureConstraints() {
+		NSLayoutConstraint.activate([
+			circularImageView.widthAnchor.constraint(equalToConstant: 48),
+			circularImageView.heightAnchor.constraint(equalToConstant: 48),
+			circularImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
+			circularImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
+		])
+	}
+	
 }
